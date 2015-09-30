@@ -11,22 +11,32 @@
     
 
     
-    <meta name="description" content="AWS介绍(1)
+    <meta name="description" content="SSO_CAS解决方案
 
-一、云计算的普及是IT行业必然趋势，很多企业在技术选型上都会考虑是公有云还是自建IDC机房，随着云服务的普及及成熟，公有云的方案不失为一种非常好的解决方法。根据公司的量级、安全性、成本等诸多方面考虑，云方案很适合中小企业，尤其创业企业，具备灵活、可扩展、快速等优势。基于IaaS公有云、私有云方案国内外都有很成熟的产品，比如国内的阿里云、腾讯云等、又拍云、七牛云存储、openst">
+技术方案
+常用SSO统一用户身份认证方案有两种：
+1、    一级域名和它的子域做SSO,比如：hao123.com 与 api.hao123.com，技术上采用Cookie+Filter能够解决单点登录问题。
+2、    跨越多个域名的SSO ，比如：hao123.com 与 yy.com 。由于cookie无法跨域，多个一级域名SSO相对复杂，需要通过CAS实现，CA">
 <meta property="og:type" content="article">
 <meta property="og:title" content="邢海峰的博客">
-<meta property="og:url" content="http://yoursite.com/2015/09/30/AWS介绍(1)/index.html">
+<meta property="og:url" content="http://yoursite.com/2015/09/30/SSO_CAS解决方案/index.html">
 <meta property="og:site_name" content="邢海峰的博客">
-<meta property="og:description" content="AWS介绍(1)
+<meta property="og:description" content="SSO_CAS解决方案
 
-一、云计算的普及是IT行业必然趋势，很多企业在技术选型上都会考虑是公有云还是自建IDC机房，随着云服务的普及及成熟，公有云的方案不失为一种非常好的解决方法。根据公司的量级、安全性、成本等诸多方面考虑，云方案很适合中小企业，尤其创业企业，具备灵活、可扩展、快速等优势。基于IaaS公有云、私有云方案国内外都有很成熟的产品，比如国内的阿里云、腾讯云等、又拍云、七牛云存储、openst">
-<meta property="og:updated_time" content="2015-09-30T03:20:09.977Z">
+技术方案
+常用SSO统一用户身份认证方案有两种：
+1、    一级域名和它的子域做SSO,比如：hao123.com 与 api.hao123.com，技术上采用Cookie+Filter能够解决单点登录问题。
+2、    跨越多个域名的SSO ，比如：hao123.com 与 yy.com 。由于cookie无法跨域，多个一级域名SSO相对复杂，需要通过CAS实现，CA">
+<meta property="og:image" content="http://yoursite.com/images/cas_sso.png">
+<meta property="og:updated_time" content="2015-09-30T10:15:04.340Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="邢海峰的博客">
-<meta name="twitter:description" content="AWS介绍(1)
+<meta name="twitter:description" content="SSO_CAS解决方案
 
-一、云计算的普及是IT行业必然趋势，很多企业在技术选型上都会考虑是公有云还是自建IDC机房，随着云服务的普及及成熟，公有云的方案不失为一种非常好的解决方法。根据公司的量级、安全性、成本等诸多方面考虑，云方案很适合中小企业，尤其创业企业，具备灵活、可扩展、快速等优势。基于IaaS公有云、私有云方案国内外都有很成熟的产品，比如国内的阿里云、腾讯云等、又拍云、七牛云存储、openst">
+技术方案
+常用SSO统一用户身份认证方案有两种：
+1、    一级域名和它的子域做SSO,比如：hao123.com 与 api.hao123.com，技术上采用Cookie+Filter能够解决单点登录问题。
+2、    跨越多个域名的SSO ，比如：hao123.com 与 yy.com 。由于cookie无法跨域，多个一级域名SSO相对复杂，需要通过CAS实现，CA">
 
     
     <link rel="alternative" href="/atom.xml" title="邢海峰的博客" type="application/atom+xml">
@@ -86,14 +96,14 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2015/09/30/AWS介绍(1)/" title="" itemprop="url"></a>
+      <a href="/2015/09/30/SSO_CAS解决方案/" title="" itemprop="url"></a>
   </h1>
   <p class="article-author">By
        
 		<a href="/about" title="邢海峰" target="_blank" itemprop="author">邢海峰</a>
 		
   <p class="article-time">
-    <time datetime="2015-09-30T03:20:09.977Z" itemprop="datePublished"> 发表于 2015-09-30</time>
+    <time datetime="2015-09-30T10:15:04.340Z" itemprop="datePublished"> 发表于 2015-09-30</time>
     
   </p>
 </header>
@@ -107,12 +117,26 @@
 		</div>
 		
 		<ul>
-<li>AWS介绍(1)</li>
+<li>SSO_CAS解决方案</li>
 </ul>
-<p>一、云计算的普及是IT行业必然趋势，很多企业在技术选型上都会考虑是公有云还是自建IDC机房，随着云服务的普及及成熟，公有云的方案不失为一种非常好的解决方法。根据公司的量级、安全性、成本等诸多方面考虑，云方案很适合中小企业，尤其创业企业，具备灵活、可扩展、快速等优势。基于IaaS公有云、私有云方案国内外都有很成熟的产品，比如国内的阿里云、腾讯云等、又拍云、七牛云存储、openstack等等，今天咱们介绍亚马逊AWS 。AWS来到中国应该是在2013年，目前AWS在全球有11个Region ，中国区有北京（2AZ，AZ指的是可用区）、宁夏两个Region ,限于中国互联网环境，中国区和全球服务是分离的，采用两套账户体系。而且有部分服务在中国区是没有提供的，例如cdn  。目前最接近大陆的CDN服务是通过边缘节点香港转过来的。AWS在新加坡、日本、悉尼，美国、欧洲的法拉克福、爱尔兰、南美洲的巴西都有Region 。当然AWS不仅仅是IAAS，也提供Paas服务 。</p>
-<p>二、AWS提供IAM、EC2虚机 、ELB负载均衡、存储服务（对象、数据库、文档、NoSql）、数据仓库、镜像、VPC、IP漂移等等,AWS在技术上无疑是领先于阿里云等其他云服务的，在中国有些水土不服的地方，如域名备案、财务结算。目前中国区AWS只对部分企业开放并不针对个人。</p>
-<p>三、责任公担模型<br>AWS负责：计算、存储、数据库、网络、可用区、边缘节点等<br>客户负责：平台、应用程序、操作系统、网络、防火墙<br>这样清晰的界定AWS的职责、AWS以更开放、包容的服务赢得公司信赖。<br>中国区AWS地址：<a href="http://www.amazonaws.cn/" target="_blank" rel="external">http://www.amazonaws.cn/</a><br>全球AWS地址：<a href="https://aws.amazon.com" target="_blank" rel="external">https://aws.amazon.com</a></p>
-<p>四、本系列AWS一共会分为10个章节：<br>1、AWS介绍<br>2、IAM用户角色权限<br>3、EC2虚机介绍<br>4、EBS、RDS、S3、Glacier存储介绍<br>5、VPC网络划分<br>6、ELB负载均衡实战<br>7、AWS计费方式<br>8、AWS实战及AWS的坑<br>9、基于AWS互联网电商架构<br>10、基于AWS全球业务部署方案</p>
+<p>技术方案</p>
+<p>常用SSO统一用户身份认证方案有两种：</p>
+<p>1、    一级域名和它的子域做SSO,比如：hao123.com 与 api.hao123.com，技术上采用Cookie+Filter能够解决单点登录问题。</p>
+<p>2、    跨越多个域名的SSO ，比如：hao123.com 与 yy.com 。由于cookie无法跨域，多个一级域名SSO相对复杂，需要通过CAS实现，CAS是成熟、开源、安全稳定的SSO解决方案</p>
+<img src="/images/cas_sso.png" width="800" height="400">
+<p>SSO服务端的工作：</p>
+<p>1、    搭建CAS服务器，配置Redis+Mysql保存用户信息，提供登陆、注册、修改信息等用户操作界面</p>
+<p>2、    将各系统用户ID统一初始化到SSO服务器，处理用户名冲突等等问题</p>
+<p>3、    配置Tomcat集成SSO服务 ，并生成SSL证书，保证安全性</p>
+<p>4、    为各个系统提供API接口 ：用户注册、用户登陆、用户信息修改、新旧用户ID对应表查询服务</p>
+<p>5、设计高可用物理架构保证7*24小时提供服务，如果SSO系统挂了所有关联系统都无法正常使用</p>
+<p>业务系统工作：</p>
+<p>1、排查系统中所有用到用户ID的地方，以及关联系统用到用户ID的地方，统计注册时必填字段、用户信息等内容</p>
+<p>2、数据迁移编写Update全表语句，根据新旧用户ID更新用户数据</p>
+<p>3、根据API接口，在用户注册、登陆、用户修改信息操作时将数据推送给CAS </p>
+<p>4、缓存更新、清空缓存重新进行初始化</p>
+<p>5、编写数据备份脚本、程序备份，一旦迁移失败数据能够恢复，建议在SVN新开分支，属重大版本更新</p>
+<p>总结：SSO迁移工作是个大坑 ，尤其是业务系统原始数据量很大情况下，要考虑缓存、搜索引擎索引、数据库等诸多因素。</p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -125,7 +149,7 @@
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="http://yoursite.com/2015/09/30/AWS介绍(1)/" data-title="邢海峰的博客" data-tsina="null" class="share clearfix">
+	  <div data-url="http://yoursite.com/2015/09/30/SSO_CAS解决方案/" data-title="邢海峰的博客" data-tsina="null" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -138,17 +162,9 @@
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/2015/09/30/SSO_CAS解决方案/" title="">
-  <strong>上一篇：</strong><br/>
-  <span>
-  (no title)</span>
-</a>
-</div>
-
 
 <div class="next">
-<a href="/2015/09/30/EBS、RDS、S3、Glacier存储介绍/"  title="">
+<a href="/2015/09/30/AWS介绍(1)/"  title="">
  <strong>下一篇：</strong><br/> 
  <span>(no title)
 </span>
