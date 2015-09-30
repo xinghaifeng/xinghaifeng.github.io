@@ -75,682 +75,233 @@
     <div id="container">
       <div id="main">
 
-   
+  
+<section class="post" itemscope itemprop="blogitem">
+  
+    <a href="/2015/09/30/SSO_CAS解决方案/" title="" itemprop="url">
+  
+    <h1 itemprop="name"></h1>
     
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
+     
+           <p itemprop="description" >SSO_CAS解决方案
+
+技术方案
+常用SSO统一用户身份认证方案有两种：
+1、    一级域名和它的子域做SSO,比如：hao123.com 与 api.hao123.com，技术上采用Cookie+Filter能够解决单点登录问题。
+2、    跨越多个域名的SSO ，比如：</p>
+        
     
-      <a href="/2015/09/30/SSO_CAS解决方案/" title="" itemprop="url"></a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="邢海峰" target="_blank" itemprop="author">邢海峰</a>
-		
-  <p class="article-time">
-    <time datetime="2015-09-30T10:15:04.340Z" itemprop="datePublished"> 发表于 2015-09-30</time>
+    <time datetime="2015-09-30T10:15:04.340Z" itemprop="datePublished">2015-09-30</time>
+  </a>
+</section>
+
+
+
+
+
+
+  
+<section class="post" itemscope itemprop="blogitem">
+  
+    <a href="/2015/09/30/AWS介绍(1)/" title="" itemprop="url">
+  
+    <h1 itemprop="name"></h1>
     
-  </p>
-</header>
-    <div class="article-content">
+     
+           <p itemprop="description" >AWS介绍(1)
+
+一、云计算的普及是IT行业必然趋势，很多企业在技术选型上都会考虑是公有云还是自建IDC机房，随着云服务的普及及成熟，公有云的方案不失为一种非常好的解决方法。根据公司的量级、安全性、成本等诸多方面考虑，云方案很适合中小企业，尤其创业企业，具备灵活、可扩展、快速等</p>
         
-        <ul>
-<li>SSO_CAS解决方案</li>
-</ul>
-<p>技术方案</p>
-<p>常用SSO统一用户身份认证方案有两种：</p>
-<p>1、    一级域名和它的子域做SSO,比如：hao123.com 与 api.hao123.com，技术上采用Cookie+Filter能够解决单点登录问题。</p>
-<p>2、    跨越多个域名的SSO ，比如：hao123.com 与 yy.com 。由于cookie无法跨域，多个一级域名SSO相对复杂，需要通过CAS实现，CAS是成熟、开源、安全稳定的SSO解决方案</p>
-<img src="/images/cas_sso.png" width="800" height="400">
-<p>SSO服务端的工作：</p>
-<p>1、    搭建CAS服务器，配置Redis+Mysql保存用户信息，提供登陆、注册、修改信息等用户操作界面</p>
-<p>2、    将各系统用户ID统一初始化到SSO服务器，处理用户名冲突等等问题</p>
-<p>3、    配置Tomcat集成SSO服务 ，并生成SSL证书，保证安全性</p>
-<p>4、    为各个系统提供API接口 ：用户注册、用户登陆、用户信息修改、新旧用户ID对应表查询服务</p>
-<p>5、设计高可用物理架构保证7*24小时提供服务，如果SSO系统挂了所有关联系统都无法正常使用</p>
-<p>业务系统工作：</p>
-<p>1、排查系统中所有用到用户ID的地方，以及关联系统用到用户ID的地方，统计注册时必填字段、用户信息等内容</p>
-<p>2、数据迁移编写Update全表语句，根据新旧用户ID更新用户数据</p>
-<p>3、根据API接口，在用户注册、登陆、用户修改信息操作时将数据推送给CAS </p>
-<p>4、缓存更新、清空缓存重新进行初始化</p>
-<p>5、编写数据备份脚本、程序备份，一旦迁移失败数据能够恢复，建议在SVN新开分支，属重大版本更新</p>
-<p>总结：SSO迁移工作是个大坑 ，尤其是业务系统原始数据量很大情况下，要考虑缓存、搜索引擎索引、数据库等诸多因素。</p>
-
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-	  	<span></span>
-		<a href="/2015/09/30/SSO_CAS解决方案/#comments" class="ds-thread-count comments-count-link" data-thread-key="2015/09/30/SSO_CAS解决方案/" data-count-type="comments">&nbsp;</a>
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-   
     
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
+    <time datetime="2015-09-30T03:20:09.977Z" itemprop="datePublished">2015-09-30</time>
+  </a>
+</section>
+
+
+
+
+
+
+  
+<section class="post" itemscope itemprop="blogitem">
+  
+    <a href="/2015/09/30/EBS、RDS、S3、Glacier存储介绍/" title="" itemprop="url">
+  
+    <h1 itemprop="name"></h1>
     
-      <a href="/2015/09/30/AWS介绍(1)/" title="" itemprop="url"></a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="邢海峰" target="_blank" itemprop="author">邢海峰</a>
-		
-  <p class="article-time">
-    <time datetime="2015-09-30T03:20:09.977Z" itemprop="datePublished"> 发表于 2015-09-30</time>
+     
+           <p itemprop="description" >EBS、RDS、S3、Glacier存储介绍
+
+AWS 存储服务各具特色，我们分别介绍EBS、S3、Glacier功能及使用场景。
+
+1、EBSSSD磁盘,适合存储持久化数据，可用性高达11个9使用场景：作为磁盘使用，IOPS非常高 ，最快2毫秒以内
+2、S3Amazon Sim</p>
+        
     
-  </p>
-</header>
-    <div class="article-content">
-        
-        <ul>
-<li>AWS介绍(1)</li>
-</ul>
-<p>一、云计算的普及是IT行业必然趋势，很多企业在技术选型上都会考虑是公有云还是自建IDC机房，随着云服务的普及及成熟，公有云的方案不失为一种非常好的解决方法。根据公司的量级、安全性、成本等诸多方面考虑，云方案很适合中小企业，尤其创业企业，具备灵活、可扩展、快速等优势。基于IaaS公有云、私有云方案国内外都有很成熟的产品，比如国内的阿里云、腾讯云等、又拍云、七牛云存储、openstack等等，今天咱们介绍亚马逊AWS 。AWS来到中国应该是在2013年，目前AWS在全球有11个Region ，中国区有北京（2AZ，AZ指的是可用区）、宁夏两个Region ,限于中国互联网环境，中国区和全球服务是分离的，采用两套账户体系。而且有部分服务在中国区是没有提供的，例如cdn  。目前最接近大陆的CDN服务是通过边缘节点香港转过来的。AWS在新加坡、日本、悉尼，美国、欧洲的法拉克福、爱尔兰、南美洲的巴西都有Region 。当然AWS不仅仅是IAAS，也提供Paas服务 。</p>
-<p>二、AWS提供IAM、EC2虚机 、ELB负载均衡、存储服务（对象、数据库、文档、NoSql）、数据仓库、镜像、VPC、IP漂移等等,AWS在技术上无疑是领先于阿里云等其他云服务的，在中国有些水土不服的地方，如域名备案、财务结算。目前中国区AWS只对部分企业开放并不针对个人。</p>
-<p>三、责任公担模型<br>AWS负责：计算、存储、数据库、网络、可用区、边缘节点等<br>客户负责：平台、应用程序、操作系统、网络、防火墙<br>这样清晰的界定AWS的职责、AWS以更开放、包容的服务赢得公司信赖。<br>中国区AWS地址：<a href="http://www.amazonaws.cn/" target="_blank" rel="external">http://www.amazonaws.cn/</a><br>全球AWS地址：<a href="https://aws.amazon.com" target="_blank" rel="external">https://aws.amazon.com</a></p>
-<p>四、本系列AWS一共会分为10个章节：<br>1、AWS介绍<br>2、IAM用户角色权限<br>3、EC2虚机介绍<br>4、EBS、RDS、S3、Glacier存储介绍<br>5、VPC网络划分<br>6、ELB负载均衡实战<br>7、AWS计费方式<br>8、AWS实战及AWS的坑<br>9、基于AWS互联网电商架构<br>10、基于AWS全球业务部署方案</p>
-
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-	  	<span></span>
-		<a href="/2015/09/30/AWS介绍(1)/#comments" class="ds-thread-count comments-count-link" data-thread-key="2015/09/30/AWS介绍(1)/" data-count-type="comments">&nbsp;</a>
-	
-</div>
-
-</footer>
-
-
-    </article>
+    <time datetime="2015-09-30T03:18:31.937Z" itemprop="datePublished">2015-09-30</time>
+  </a>
+</section>
 
 
 
 
 
 
-   
+  
+<section class="post" itemscope itemprop="blogitem">
+  
+    <a href="/2015/09/29/AWS EC2虚机介绍/" title="" itemprop="url">
+  
+    <h1 itemprop="name"></h1>
     
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
+     
+           <p itemprop="description" >AWS EC2虚机介绍
+
+AWS EC2是亚马逊云主打产品，也是用户使用最广泛的产品，相当于传统机房的一台物理机器，可以配置多硬盘、多网卡等等
+
+闲言碎语不多讲，直接上图创建一台EC2：1、登陆到控制台，选择EC2服务
+
+2、启动EC2实例，开始创建EC2
+
+3、选择EC2实例操</p>
+        
     
-      <a href="/2015/09/30/EBS、RDS、S3、Glacier存储介绍/" title="" itemprop="url"></a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="邢海峰" target="_blank" itemprop="author">邢海峰</a>
-		
-  <p class="article-time">
-    <time datetime="2015-09-30T03:18:31.937Z" itemprop="datePublished"> 发表于 2015-09-30</time>
+    <time datetime="2015-09-29T08:18:31.779Z" itemprop="datePublished">2015-09-29</time>
+  </a>
+</section>
+
+
+
+
+
+
+  
+<section class="post" itemscope itemprop="blogitem">
+  
+    <a href="/2015/09/29/互联网网址导航/" title="" itemprop="url">
+  
+    <h1 itemprop="name"></h1>
     
-  </p>
-</header>
-    <div class="article-content">
+     
+           <p itemprop="description" >互联网网址导航
+
+常用网址导航
+IT峰会：
+中国云计算大会 6月  http://www.ciecloud.org/
+ArchSummit全球架构师峰会：   10月  http://www.archsummit.com/
+全球移动互联网大会 5月：  http://www.th</p>
         
-        <ul>
-<li>EBS、RDS、S3、Glacier存储介绍</li>
-</ul>
-<p>AWS 存储服务各具特色，我们分别介绍EBS、S3、Glacier功能及使用场景。</p>
-<img src="/images/aws.jpg" width="500" height="200">
-<p>1、EBS<br>SSD磁盘,适合存储持久化数据，可用性高达11个9<br>使用场景：作为磁盘使用，IOPS非常高 ，最快2毫秒以内</p>
-<p>2、S3<br>Amazon Simple Storage Service是一项面向Internet 的存储服务，最多新建100个存储桶、可以配置访问权限等<br>使用场景：存放静态资源、如果网站是html存静态，直接放到S3即可访问</p>
-<p>3、Glacier<br>保存历史数据，价格低廉，从Glacier取数据需要3-5个小时后才能访问<br>使用场景：日志、历史数据很长一段时间都不使用，但还需要找个地方存放</p>
-<p>4、Gateway<br>Gateway 服务将本地软件设备与云存储连接起来,您可以安全地将数据存储到 AWS 云中,以便享用可扩展且经济实惠的存储<br>使用场景：公司内网直连AWS存储，能够安全、快速实现数据云同步、保证数据一致性。</p>
-
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-	  	<span></span>
-		<a href="/2015/09/30/EBS、RDS、S3、Glacier存储介绍/#comments" class="ds-thread-count comments-count-link" data-thread-key="2015/09/30/EBS、RDS、S3、Glacier存储介绍/" data-count-type="comments">&nbsp;</a>
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-   
     
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
+    <time datetime="2015-09-29T07:51:53.434Z" itemprop="datePublished">2015-09-29</time>
+  </a>
+</section>
+
+
+
+
+
+
+  
+<section class="post" itemscope itemprop="blogitem">
+  
+    <a href="/2015/09/29/AWS IAM用户角色权限/" title="" itemprop="url">
+  
+    <h1 itemprop="name"></h1>
     
-      <a href="/2015/09/29/AWS EC2虚机介绍/" title="" itemprop="url"></a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="邢海峰" target="_blank" itemprop="author">邢海峰</a>
-		
-  <p class="article-time">
-    <time datetime="2015-09-29T08:18:31.779Z" itemprop="datePublished"> 发表于 2015-09-29</time>
+     
+           <p itemprop="description" >AWS IAM用户角色权限
+
+IAM全称： Identity and Access Management  ，IAM能够集中管理用户、安全证书（例如访问密钥），以及控制用户可访问哪些AWS 资源的权限。可以按角色、权限、组来划分用户、可以将EC2绑定到角色中。公司可以通过IAM划</p>
+        
     
-  </p>
-</header>
-    <div class="article-content">
-        
-        <ul>
-<li>AWS EC2虚机介绍</li>
-</ul>
-<p>AWS EC2是亚马逊云主打产品，也是用户使用最广泛的产品，相当于传统机房的一台物理机器，可以配置多硬盘、多网卡等等</p>
-<img src="/images/aws.jpg" width="500" height="200">
-<p>闲言碎语不多讲，直接上图创建一台EC2：<br>1、登陆到控制台，选择EC2服务</p>
-<img src="/images/aws_ec2_001.png" width="900" height="700">
-<p>2、启动EC2实例，开始创建EC2</p>
-<img src="/images/aws_ec2_01.png" width="900" height="700">
-<p>3、选择EC2实例操作系统，这里我们默认AWS提供的Linux</p>
-<img src="/images/aws_ec2_02.png" width="900" height="700">
-<p>4、选择EC2机型配置，可以根据需求、价格等因素选择</p>
-<img src="/images/aws_ec2_03.png" width="900" height="700">
-<p>5、配置详细信息，启动机器数量、网络、IAM、监控</p>
-<img src="/images/aws_ec2_04.png" width="900" height="700">
-<p>6、配置存储，往EC2上挂硬盘</p>
-<img src="/images/aws_ec2_05.png" width="900" height="700">
-<p>7、配置安全组策略，开放哪些端口，设置白名单</p>
-<img src="/images/aws_ec2_06.png" width="900" height="700">
-<p>8、审查启动实例  ，仔细检查一遍配置</p>
-<img src="/images/aws_ec2_07.png" width="900" height="700">
-<p>9、创建PEM密钥对 ，一定要保存好，以后登录全靠它，没有就煞笔了</p>
-<img src="/images/aws_ec2_08.png" width="900" height="700">
-<p>10、分配静态IP地址，如果创建EC2时候没有分配，那么实例创建后最好分配一下 ，否则重启实例IP会漂移的！</p>
-<img src="/images/aws_ec2_09.png" width="900" height="700">
-<p>11、EC2创建完成后仍然可以管理安全组，设置白名单</p>
-<img src="/images/aws_ec2_10.png" width="900" height="700">
-<p>12、使用PUTTY登录配置，下载puttygen将pem文件生成ppk文件（1）</p>
-<img src="/images/aws_ec2_11.png" width="470" height="470">
-<p>13、使用PUTTY登录配置（2）</p>
-<img src="/images/aws_ec2_12.png" width="470" height="470">
-<p>14、连接后，输入ec2-user敲回车，无需密码，登陆啦！</p>
-<p>15、更多机型供选择:<a href="https://aws.amazon.com/cn/ec2/instance-types/" target="_blank" rel="external">https://aws.amazon.com/cn/ec2/instance-types/</a></p>
-
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-	  	<span></span>
-		<a href="/2015/09/29/AWS EC2虚机介绍/#comments" class="ds-thread-count comments-count-link" data-thread-key="2015/09/29/AWS EC2虚机介绍/" data-count-type="comments">&nbsp;</a>
-	
-</div>
-
-</footer>
-
-
-    </article>
+    <time datetime="2015-09-29T06:26:40.117Z" itemprop="datePublished">2015-09-29</time>
+  </a>
+</section>
 
 
 
 
 
 
-   
+  
+<section class="post" itemscope itemprop="blogitem">
+  
+    <a href="/2015/09/27/2015一个北漂人的感受/" title="" itemprop="url">
+  
+    <h1 itemprop="name"></h1>
     
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
+     
+           <p itemprop="description" >2015一个北漂人的感受
+
+今天是2015年中秋节 ，时间转瞬即逝，拍脑门一想，已经在北京漂7年整 。之所以用漂是因为没房、没车、更重要的是心里没底 。7年北漂的阅历让我为人处世、办事能力都成熟了很多，从莽撞少年，渐渐历练成长，未来路还长，写一篇文章留日后共勉 。
+在北京住过海淀</p>
+        
     
-      <a href="/2015/09/29/互联网网址导航/" title="" itemprop="url"></a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="邢海峰" target="_blank" itemprop="author">邢海峰</a>
-		
-  <p class="article-time">
-    <time datetime="2015-09-29T07:51:53.434Z" itemprop="datePublished"> 发表于 2015-09-29</time>
+    <time datetime="2015-09-27T15:08:39.006Z" itemprop="datePublished">2015-09-27</time>
+  </a>
+</section>
+
+
+
+
+
+
+  
+<section class="post" itemscope itemprop="blogitem">
+  
+    <a href="/2015/09/20/谈谈创业公司的产品经理/" title="" itemprop="url">
+  
+    <h1 itemprop="name"></h1>
     
-  </p>
-</header>
-    <div class="article-content">
+     
+           <p itemprop="description" >谈谈创业公司的产品经理
+
+一个码农谈产品经理，纯属扯马篮子，无奈很多创业公司都会出现的一种现象，产品经理对产品方向感不能很好把握，需求杂乱无章没有节制，程序瑗充当试验品，无休止增加需求，产品没有重点，做一个大而全，还很牛逼的说：我们是最全的，有个毛用。百度指数、CNZZ指标总觉得</p>
         
-        <ul>
-<li>互联网网址导航</li>
-</ul>
-<p>常用网址导航</p>
-<p>IT峰会：</p>
-<p>中国云计算大会 6月  <a href="http://www.ciecloud.org/" target="_blank" rel="external">http://www.ciecloud.org/</a></p>
-<p>ArchSummit全球架构师峰会：   10月  <a href="http://www.archsummit.com/" target="_blank" rel="external">http://www.archsummit.com/</a></p>
-<p>全球移动互联网大会 5月：  <a href="http://www.thegmic.cn/" target="_blank" rel="external">http://www.thegmic.cn/</a></p>
-<p>MDCC 移动开发者大会 ：<a href="http://mdcc.csdn.net/" target="_blank" rel="external">http://mdcc.csdn.net/</a></p>
-<p>世界互联网大会   </p>
-<p>Ruby开发者大会  ：<a href="http://rubyconfchina.org/" target="_blank" rel="external">http://rubyconfchina.org/</a></p>
-<p>中国互联网安全大会：<a href="http://isc.360.cn/2015/index.html" target="_blank" rel="external">http://isc.360.cn/2015/index.html</a></p>
-<p>世界机器人大会：<a href="http://huiyi.csdn.net/activity/product/goods_list?project_id=2243" target="_blank" rel="external">http://huiyi.csdn.net/activity/product/goods_list?project_id=2243</a></p>
-<p>IT技术：</p>
-<p>慕课网：www.imooc.com</p>
-<p>练数成金：<a href="http://f.dataguru.cn/" target="_blank" rel="external">http://f.dataguru.cn/</a></p>
-<p>卢松松：<a href="http://lusongsong.com/" target="_blank" rel="external">http://lusongsong.com/</a></p>
-<p>粉丝日志：<a href="http://blog.fens.me/" target="_blank" rel="external">http://blog.fens.me/</a></p>
-<p>MPD软件工作坊： <a href="http://www.mpd.org.cn/" target="_blank" rel="external">http://www.mpd.org.cn/</a></p>
-<p>自媒体营销：</p>
-<p>馒头商学院：<a href="http://www.mtedu.com/" target="_blank" rel="external">http://www.mtedu.com/</a></p>
-<p>朱卫坤：实名网络营销倡导人 <a href="http://www.zhuweikun.com/" target="_blank" rel="external">http://www.zhuweikun.com/</a></p>
-<p>普及社：黄渊普主办，以普及电商知识  <a href="http://chuansong.me/account/puji-she" target="_blank" rel="external">http://chuansong.me/account/puji-she</a></p>
-<p>安卓研究院：<a href="http://mp.aiweibang.com/m/u/1787/a" target="_blank" rel="external">http://mp.aiweibang.com/m/u/1787/a</a></p>
-<p>程苓峰：云科技微信号:yunkeji</p>
-<p>坏男孩学院：<a href="http://www.puahome.com/" target="_blank" rel="external">http://www.puahome.com/</a></p>
-<p>宗宁：<a href="http://zongning.blogchina.com/" target="_blank" rel="external">http://zongning.blogchina.com/</a></p>
-<p>淘宝NPM镜像：<a href="http://npm.taobao.org/" target="_blank" rel="external">http://npm.taobao.org/</a></p>
-<p>IT早茶：微信号ITzaocha</p>
-<p>Hao123 英语 Share a good web directonry   <a href="http://en.hao123.com/" target="_blank" rel="external">http://en.hao123.com/</a><br>Hao123 日语 hao123—マイ スタートページ  <a href="http://jp.hao123.com/" target="_blank" rel="external">http://jp.hao123.com/</a><br>Hao123 越南语 hao123-Trang chủ truy cập web  <a href="http://vn.hao123.com/" target="_blank" rel="external">http://vn.hao123.com/</a><br>Hao123 泰语 hao123-ท่องเน็ตสะดวกปลอดภัย   <a href="http://th.hao123.com/" target="_blank" rel="external">http://th.hao123.com/</a></p>
-<p>再引用知乎上凡尘-高级百度产品经理的一段解析：</p>
-<p>百度国际hao123产品团队正好是我负责的，楼上也有贴出某浏览器海外版，也正好是2年多前和团队战友们一起创造出的国际版本。</p>
-<p>两个产品也都取得了很不错的海外市场成绩，实事求是的说，与国内产品的差别和适应国际用户的体验为成绩创造了客观条件，UC印度拿下头把交椅，hao123多个国家浏览器首页市场份额No.1。</p>
-<p>说下产品与国内差异化过程中的考虑吧：</p>
-<p>1、什么样的国际产品适合差异化？<br>中国出海产品现在越来越多，除了自己负责过的UC和Hao123，其它成功的，不成功的都很多，list下：从最早的网秦，易查，到后面的UC，金山cleanmaster，点心，再到微信，Go系列，各种游戏出海，所有公司都会面临一个问题：产品国际化时，是单发版，还是简单翻译？<br>基于成本和体验双重标准，很容易形成一个套路：</p>
-<ul>
-<li>A 纯工具类产品、社交类产品：一套产品架构走天下，如点心。资源最小化，价值最大化。</li>
-<li>B 涉及内容和本地化的产品：单独拉出一条支线，浏览器因为有导航及很多在线业务，因此，在UI层以上，也会单独出来。注意：更多的是UI层，并不是核心的框架层、内核层，数据协议、基础架构、后台上，很多产品国内、国际都依然是一套体系。</li>
-</ul>
-<p>特别说一下，很多人会问：很多美国公司为啥都是一个UI版本？事实上也是基本满足A和B的，一些内容非常深度的网站，重点国家也会不同程度的差异化，如Amazon、Ebay、Yahoo，大家可以看下雅虎日本和雅虎美国，连主色系都快换了。</p>
-<p>2、组织架构如何保证差异化落地？<br>在B的情况下，比较多的情况是，除了品牌名保持一致外，其他所有都可以推翻，老板希望新的团队基于国际市场发挥创造力。于是进一步，很多公司有了国际事业部，而国际部门为了追求自身的绝对独立和不断强化各线资源对国际业务的专业性，往往会组建隶属于国际业务的PM\UI\UE资源，有的甚至还有专属的研发资源。</p>
-<p>3、为什么国际产品往往UI比国内好看？<br>一句话：国内是大象难转身，国际是轻装上阵。<br>1）国内业务，其受到的限制、约束不胜枚举，一个导航每时每刻正在创造的商业价值就决定了很多事情不能变动，一个产品团队需要考虑的太多，已经远远不只是UI、UE上的问题。<br>2）国内用户已经习惯的东西，不能简单以好看与不好看来衡量是否改动。淘宝做过简化尝试，但效果马上就跌了，因为用户当对一个产品某方面属性形成非常强的依赖时（比如导航网站的站点枚举，购物网站密码但固定的分类罗列），UI就会下降到一个相对其次的地位。产品经理更需要在这个需求方向上去延伸，去结合新的视觉设计，而不是为了美观而美观。<br>3）当国际业务无用户基础，可以从0切入时，想象空间于是就大了，所谓的后发优势。</p>
-<p>4、最重要，国际产品都做什么样的差异化？<br>即便有单独的国际团队，也不能因为有资源而为了差异而差异。需搞清楚做什么差异化，做他的目的是什么？以Hao123为例，几乎每一个差异化都是基于国际市场的需求切合的：</p>
-<ul>
-<li>比如站点图像化，国际文字不像中文，95%的站点能用2个字能表达，于是图像化比文字化更能识别（这是国内、国际产品内容型产品非常重要的区别原因）</li>
-<li>比如分类区竖版，而非国内横版，因为多语言时，竖版能统一一套架构做到不同语种的规则排版。</li>
-<li>比如Hao123的开放平台，国际产品无法直接获取那么多的本地内容，开放平台是最好的接入本土开发者的产品架构</li>
-<li>比如左侧工具类，海外用户因为本土网站查询结果类步长过长，对快捷查询有非常大的需求。<br>以上，即是差异化，也都是创新，都是基于真正用户需求的体验表达。</li>
-</ul>
-<p>最后放个巴西和埃及hao123的URL，仅供借鉴。可以看到两者排版也依然有区别。<br><a href="http://br.hao123.com" target="_blank" rel="external">http://br.hao123.com</a> （全巴西第20）<br><a href="http://ar.hao123.com" target="_blank" rel="external">http://ar.hao123.com</a> （全埃及第7，仅此于几个全球巨头了）<br>产品做得还有很多不足，还在不断改进中。</p>
-
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-	  	<span></span>
-		<a href="/2015/09/29/互联网网址导航/#comments" class="ds-thread-count comments-count-link" data-thread-key="2015/09/29/互联网网址导航/" data-count-type="comments">&nbsp;</a>
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-   
     
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
+    <time datetime="2015-09-20T03:08:21.062Z" itemprop="datePublished">2015-09-20</time>
+  </a>
+</section>
+
+
+
+
+
+
+  
+<section class="post" itemscope itemprop="blogitem">
+  
+    <a href="/2015/09/12/yy语音/" title="" itemprop="url">
+  
+    <h1 itemprop="name"></h1>
     
-      <a href="/2015/09/29/AWS IAM用户角色权限/" title="" itemprop="url"></a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="邢海峰" target="_blank" itemprop="author">邢海峰</a>
-		
-  <p class="article-time">
-    <time datetime="2015-09-29T06:26:40.117Z" itemprop="datePublished"> 发表于 2015-09-29</time>
+     
+           <p itemprop="description" >yy语音一起聊聊## 掐指一算，玩YY已有半年时间，公会、主播、游客、土豪、黑粉是YY里主要角色，四大家族有China（包含舞帝）、蓝雨、IR、娱+，10万人主播有：老利、天佑、李先生、阿哲，很多主播都在挂协议，也就是虚拟粉丝，这块已经变成一条产业链，淘宝一搜一大把，在我看来很多</p>
+        
     
-  </p>
-</header>
-    <div class="article-content">
-        
-        <ul>
-<li>AWS IAM用户角色权限</li>
-</ul>
-<p>IAM全称： Identity and Access Management  ，IAM能够集中管理用户、安全证书（例如访问密钥），以及控制用户可访问哪些AWS 资源的权限。可以按角色、权限、组来划分用户、可以将EC2绑定到角色中。公司可以通过IAM划分各个部门的权限，方便统一管理及账单整合费用计算。</p>
-<p>账号登录方式：用户名+密码+MFA 设备/手机令牌 ，这样即使用户名密码暴露，账号也不会被恶意登陆，每个账号单独认证，互不影响 ，如果用户需要以API编程方式访问AWS，那么必须为他们创建访问密钥。</p>
-<p>##AWS IAM</p>
-<img src="/images/AWS_IAM001.png" width="900" height="700">
-<p>官方罗列的IAM 功能：<br>• 集中控制用户和安全证书– 您可控制每个用户的AWS 安全证书（例如访问密钥）的创建、交替及撤销<br>• 集中控制用户访问– 您可控制AWS 系统中用户可访问的数据及访问的方式<br>• 共享的AWS 资源– 用户可共享合作项目的数据<br>• 基于组织群组的许可– 您可基于用户的职责（例如，管理员、开发人员等）或部门来限制用户的访问。当用户调入组织内部时，您可轻松更新他们对AWS 的访问，以反映他们角色的变化<br>• 集中控制AWS 资源– 您的组织对用户创建的数据采取集中控制，这样当用户调入或离开组织时，可确保数据的连续性或不会遗失数据<br>• 控制资源的创建– 您可帮助确保用户仅在获得批准的位置创建AWS 数据<br>• 联网控制– 您可帮助确保用户仅使用SSL 从组织的公司网络访问AWS 资源<br>• 单一AWS 账单–您组织的AWS 账户将收到针对所有用户的AWS 活动而开具的单一AWS 账单</p>
-<p>命令行设置权限：<br>arn:aws:service:region:account:resource<br>• service 标识AWS 产品。对于IAM 资源，它始终为iam。<br>• region 是资源所在的地区。对于IAM 资源，它始终留为空白。<br>• account 是指AWS 账户ID，不含连字符（例如，123456789012）<br>• resource 是指识别特定资源的部分</p>
-<p>例如：<br>arn:aws:iam::123456789012:root<br>arn:aws:iam::123456789012:user/Bob<br>arn:aws:iam::123456789012:user/division_abc/subdivision_xyz/Bob<br>arn:aws:iam::123456789012:group/Developers<br>arn:aws:iam::123456789012:group/division_abc/subdivision_xyz/product_A/Develop<br>arn:aws:iam::123456789012:user/*</p>
-<p>策略实例，都是JSON格式的字符：<br>{<br>    “Version”: “2012-10-17”,<br>    “Statement”: [{<br>    “Effect”: “Allow”,<br>    “Action”: [“iam:<em>AccessKey</em>“],<br>    “Resource”: “arn:aws:iam::ACCOUNT-ID-WITHOUT-HYPHENS:user/division_abc/sub<br>    division_xyz/Bob”<br>    }]<br>}</p>
-<p>{<br>    “Version”: “2012-10-17”,<br>    “Statement”: [<br>    {<br>    “Effect”: “Allow”,<br>    “Action”: “s3:<em>“,<br>    “Resource”: “arn:aws:s3:::example_bucket/marketing/newproductlaunch/wid<br>    get/</em>“<br>    },<br>    {<br>    “Effect”: “Allow”,<br>    “Action”: “s3:ListBucket<em>“,<br>    “Resource”: “arn:aws:s3:::example_bucket”,<br>    “Condition”: {“StringLike”: {“s3:prefix”: “marketing/newproductlaunch/wid<br>    get/</em>“}}<br>    }<br>    ]<br>}</p>
-<p>当IAM 创建用户、群组、实例配置文件或服务器证书时，它会向每个实体分配唯一的ID，如以下示例所示：AIDAJQABLZS4A3QDU576Q在大多数情况下，当您使用IAM 实体时，将使用易记名称和ARN，因此不需要知道特定实体的唯一ID。然而，当无法使用易记名称时，唯一ID 有时也是有用的。</p>
-<p>总结：<br>1、可以使用AWS CloudTrail 记录IAM 事件<br>2、在IAM管理时候建议用命令行脚本方式配置。<br>3、尽量不要用超级管理员权限，登陆EC2后尽量不要用root,再划分管理员权限</p>
-
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-	  	<span></span>
-		<a href="/2015/09/29/AWS IAM用户角色权限/#comments" class="ds-thread-count comments-count-link" data-thread-key="2015/09/29/AWS IAM用户角色权限/" data-count-type="comments">&nbsp;</a>
-	
-</div>
-
-</footer>
-
-
-    </article>
+    <time datetime="2015-09-12T13:42:59.452Z" itemprop="datePublished">2015-09-12</time>
+  </a>
+</section>
 
 
 
 
 
 
-   
+  
+<section class="post" itemscope itemprop="blogitem">
+  
+    <a href="/2015/09/05/hello-world/" title="" itemprop="url">
+  
+    <h1 itemprop="name"></h1>
     
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
+     
+           <p itemprop="description" >日记开篇，博客正式搬迁到GitHub ,感谢@粉丝日志   @wuchong  ，一盏灯甚或几盏灯的微光故不能照彻整个黑暗，可是，它可以给寒夜里不眠的人们带来一点勇气，甚或一点温暖图片</p>
+        
     
-      <a href="/2015/09/27/2015一个北漂人的感受/" title="" itemprop="url"></a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="邢海峰" target="_blank" itemprop="author">邢海峰</a>
-		
-  <p class="article-time">
-    <time datetime="2015-09-27T15:08:39.006Z" itemprop="datePublished"> 发表于 2015-09-27</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <ul>
-<li>2015一个北漂人的感受</li>
-</ul>
-<p>今天是2015年中秋节 ，时间转瞬即逝，拍脑门一想，已经在北京漂7年整 。之所以用<br>漂是因为没房、没车、更重要的是心里没底 。7年北漂的阅历让我为人处世、办事能力都成熟了很多，从莽撞少年，渐渐历练成长，未来路还长，写一篇文章留日后共勉 。</p>
-<p>在北京住过海淀二里庄 、海淀永丰屯、大兴西红门，7年搬家5次 ，换3份工作。</p>
-<p>起初来北京，利哥接的我，直接带到二里庄，然后很牛逼的说，我们这离鸟巢很近，<br>能直接看到盘古大观。再后来，志伟来二里庄，我们仨正式开始捆绑式北漂生活，虽然物质条件不富足但生活有目标、不觉得苦 。催牛逼、打台球、一天天日子过的也很好。<br>感觉拿家里钱太丢人，靠自己打拼，其实家里也没钱 哈哈 。有钱吃火锅，没钱吃盖饭，月初是人吃啥狗吃啥，月底是狗吃啥人吃啥，社会的弟中弟，朝着迈向程序袁的道路前进，<br>并希望找到一位程序瑗。找过小姐么？ ，大哥加活不？  大哥你轻点，压我头发了~  只有累死的牛，没有耕坏的地 。</p>
-<p>经过7年各自奋斗，利哥去了广州做IOS大牛 、阿伟去了普吉岛盖酒店、我继续在北京，系统架构师。回头看，曾经踩过坑，受过的苦都是财富。</p>
-<p>遇到过的人很多，具体分分类型:<br>装逼型：我家牛逼，有房、有存款，2.3个亿<br>否定型：无论你说什么，他都会说:你说的不对啊 ，应该这样…..<br>无辜型 :这事和我没关系，找谁谁谁…….<br>责任型：考虑问题很周到，个人能力强，勇于承担<br>学习型：善于学习总结，谦虚谨慎<br>热情型：为人开朗积极乐观，经理充沛<br>居家型：娶妻生子、不求大富大贵、只求安稳<br>创新型：喜欢新鲜事物，喜欢折腾</p>
-<p>大家都是好人，只是没有时间更多了解、生存之道就是别动我的奶酪 。</p>
-<p>工作一定要有责任心，学会拒绝、选择、坚守。建立自己的社会圈子、朋友圈子、工作圈子。</p>
-
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-	  	<span></span>
-		<a href="/2015/09/27/2015一个北漂人的感受/#comments" class="ds-thread-count comments-count-link" data-thread-key="2015/09/27/2015一个北漂人的感受/" data-count-type="comments">&nbsp;</a>
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2015/09/20/谈谈创业公司的产品经理/" title="" itemprop="url"></a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="邢海峰" target="_blank" itemprop="author">邢海峰</a>
-		
-  <p class="article-time">
-    <time datetime="2015-09-20T03:08:21.062Z" itemprop="datePublished"> 发表于 2015-09-20</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <ul>
-<li>谈谈创业公司的产品经理</li>
-</ul>
-<p>一个码农谈产品经理，纯属扯马篮子，无奈很多创业公司都会出现的一种现象，产品经理对产品方向感不能很好把握，需求杂乱无章没有节制，程序瑗充当试验品，无休止增加需求，产品没有重点，做一个大而全，还很牛逼的说：我们是最全的，有个毛用。百度指数、CNZZ指标总觉得不够用，还要自己分析日志，你特马的已有指标看明白了么？ 定需求的时候，先拍脑门，说这事就这么定了。然后拍胸脯，说出了问题我负责，最后拍大腿，说我擦，当是谁开发的。其实这事和开发同学有个猫逼关系。产品经理拔吊无情啊，扪心自问你是合格的产品经理么，那么怎样成为合格的产品经理？ 身为程序猿的我，学习了馒头学院的课程 ，深受启发。产品经理把握整个产品的方向，公司的定位，应该从整个行业从CEO角度看整个行业形态；</p>
-<p>产品经理四步工作法<br>❖ 找到痛点，定义场景<br>❖ 体验做透，方案优雅<br>❖ 保持克制，体验闭环<br>❖ 小步快跑，快速迭代</p>
-<p>• 一个明确而且用户迫切需要的产品，很容易找到明确的用户群。<br>这样，产品研发出来后，不容易走偏。<br>• 选择的用户需求要有一定的普遍性，这点决定这个产品的未来市<br>场前景。<br>• 解决的问题少，开发速度快，也容易控制初期的研发成本和风险。<br>• 解决明确问题的产品，容易给用户说清楚，推广也会相对简单。</p>
-<p>好的和普通的产品经理的区别？<br>• 好的的产品经理会说“嗯，让我们来做一个东西，它可<br>以帮助用户解决一个XX问题。”<br>• 普通产品经理会说“哈！这个东西太烂了，我能找出一<br>百个优化点！想出了一百个新功能！提升了一千项用户<br>体验！”</p>
-<p>为什么小团队反而容易成功？<br>• 沟通成本低，95%的问题出在沟通上<br>• 因为资源有限，反而会专注在核心功能上<br>• 80%，40%原则 80%<em>80%</em>80%*80%=40%</p>
-<p>传统行业微信商业化之道？<br>微信是一个快速吸纳粉丝的阵地，传统行业限于成本考虑不适合直接开发APP，请尝试微信营销，直接用NODEJS对接微信开放平台。</p>
-<p>低频”互联网产品如何营销？<br>要综合客单价和消费频次两个因素。<br>客单价和利润率不好改变，那么就要从消费频次上做文章，提升用户粘性<br>产品分为：可运营产品，核心业务要运营的产品、运营产品 ，辅助运营的产品，如果你的核心产品是一个工具，比如IP地址查询，没有情感，那么就需要部署运营型产品提高情感挖掘可预期需求，让他有调动用户使用的空间。</p>
-<p>运营的目的？<br>1、获客：获得你想要的用户<br>2、教育：让用户认识和使用你的服务<br>3、粘性：让用户多次使用你的服务</p>
-<p>低频消费的获客方法？<br>竞争入口，获取精准用户 。购买流量是获取客户有效方式。适合足够有钱，产品相比竞争对手足够好的企业，用户对产品最强烈感知是价格和服务。<br>扩大范围，可以获取潜在客户，比如微信号、会员制，找到潜在用户，并能低成本获取他们，跨界沟通，分析和你行业相似行业，通过活动实现行业共享，以旧带新，用老用户拉新用户 ，拉身边朋友进来，口碑营销，或活动机制 。</p>
-
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-	  	<span></span>
-		<a href="/2015/09/20/谈谈创业公司的产品经理/#comments" class="ds-thread-count comments-count-link" data-thread-key="2015/09/20/谈谈创业公司的产品经理/" data-count-type="comments">&nbsp;</a>
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2015/09/12/yy语音/" title="" itemprop="url"></a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="邢海峰" target="_blank" itemprop="author">邢海峰</a>
-		
-  <p class="article-time">
-    <time datetime="2015-09-12T13:42:59.452Z" itemprop="datePublished"> 发表于 2015-09-12</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <ul>
-<li>yy语音一起聊聊<br>##<br> 掐指一算，玩YY已有半年时间，公会、主播、游客、土豪、黑粉是YY里主要角色，四大家族有China（包含舞帝）、蓝雨、IR、娱+，10万人主播有：老利、天佑、李先生、阿哲，很多主播都在挂协议，也就是虚拟粉丝，这块已经变成一条产业链，淘宝一搜一大把，在我看来很多协议不一定是主播挂的 ，而是YY平台帮助挂的。<br>佣金分成：YY平台抽50%~60%  ，家族抽10%  主播抽30%~40% 也就是说100块钱主播最多能得40块钱 。<br> 在虚拟世界里有家族利益、兄弟情义、有网络暴力、人情往来、背叛、妥协，没人能做到问心无愧。<br>在YY里人生观、价值观容易被扭曲，玩的就是心态。主播的才艺是舔土豪、聊天、唱歌、跳舞、喊麦、游客最牛逼的才艺是刷礼物，黑粉负责刷屏。<br> 在现实世界中无法找寻的，在虚拟世界里得到满足，当你刷礼物后，主播在聊天室会感谢你，满足你装逼的心里，画面感、存在感。<br>色情和暴力不是我理解的YY，就如一千个读者心中有一千个哈姆雷特，没有调查就没有发言权。<br> 不得不承认，YY受众主要以屌丝为主，有人视频直播带你环游世界，带你回家乡看看，这种模式太棒了，噢耶！玩的就是心态，现实世界也如此，玩的就是心态。</li>
-</ul>
-
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-	  	<span></span>
-		<a href="/2015/09/12/yy语音/#comments" class="ds-thread-count comments-count-link" data-thread-key="2015/09/12/yy语音/" data-count-type="comments">&nbsp;</a>
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2015/09/05/hello-world/" title="" itemprop="url"></a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="邢海峰" target="_blank" itemprop="author">邢海峰</a>
-		
-  <p class="article-time">
-    <time datetime="2015-09-05T12:40:35.905Z" itemprop="datePublished"> 发表于 2015-09-05</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <ul>
-<li>日记<br>开篇，博客正式搬迁到GitHub ,感谢@粉丝日志   @wuchong  ，一盏灯甚或几盏灯的微光故不能照彻整个黑暗，可是，它可以给寒夜里不眠的人们带来一点勇气，甚或一点温暖<h2 id="图片">图片</h2><img src="/images/mmexport1440129021502.jpg" width="400" height="600" title="这是一张图片"></li>
-</ul>
-
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-	  	<span></span>
-		<a href="/2015/09/05/hello-world/#comments" class="ds-thread-count comments-count-link" data-thread-key="2015/09/05/hello-world/" data-count-type="comments">&nbsp;</a>
-	
-</div>
-
-</footer>
-
-
-    </article>
+    <time datetime="2015-09-05T12:40:35.905Z" itemprop="datePublished">2015-09-05</time>
+  </a>
+</section>
 
 
 
