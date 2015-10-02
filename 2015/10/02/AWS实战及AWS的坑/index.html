@@ -11,34 +11,38 @@
     
 
     
-    <meta name="description" content="随想录（1）-互联网狗文化
+    <meta name="description" content="AWS实战及AWS的坑
 
-在联想工作谈的是狼文化，后来觉得自己太狗了，所以思考狗文化
-狼最喜欢刨坑 ，给自己挖坑，看看联想这只狼，饿的逼得喝的 ，眼睛都绿了。不是黑联想 ，真心希望作为民族企业、传统企业的领袖联想在互联网+的浪潮中能转型成功，越办越好。
-狗饿了能吃屎，等屈能伸，这种心理适合创业公司，更适合传统企业转型互联网
-舌头长：会舔 ，上舔领导、下舔客户，关系都维持的明明白白的
-够忠诚：狗">
+
+1、多块网卡绑定后 ，可以在操作系统路由表里设定流量走那块网卡
+2、对象存储适合一次性多次读  ，EBS需要和网卡共享带宽的，可以做快照，默认存在S3上，可以跨AZEBS上可以做READ0增加吞吐量 ,没必要做其他
+3、IOSP 每秒读写速度  3 IOPS/GB  封顶10000IOPS  与160MBps
+4、两个盘并发，提高IOPS效率  
+5、s3 数据归档到冷">
 <meta property="og:type" content="article">
 <meta property="og:title" content="邢海峰的博客">
-<meta property="og:url" content="http://yoursite.com/2015/10/02/随想录（2）-互联网狗文化/index.html">
+<meta property="og:url" content="http://yoursite.com/2015/10/02/AWS实战及AWS的坑/index.html">
 <meta property="og:site_name" content="邢海峰的博客">
-<meta property="og:description" content="随想录（1）-互联网狗文化
+<meta property="og:description" content="AWS实战及AWS的坑
 
-在联想工作谈的是狼文化，后来觉得自己太狗了，所以思考狗文化
-狼最喜欢刨坑 ，给自己挖坑，看看联想这只狼，饿的逼得喝的 ，眼睛都绿了。不是黑联想 ，真心希望作为民族企业、传统企业的领袖联想在互联网+的浪潮中能转型成功，越办越好。
-狗饿了能吃屎，等屈能伸，这种心理适合创业公司，更适合传统企业转型互联网
-舌头长：会舔 ，上舔领导、下舔客户，关系都维持的明明白白的
-够忠诚：狗">
-<meta property="og:updated_time" content="2015-10-02T05:48:08.477Z">
+
+1、多块网卡绑定后 ，可以在操作系统路由表里设定流量走那块网卡
+2、对象存储适合一次性多次读  ，EBS需要和网卡共享带宽的，可以做快照，默认存在S3上，可以跨AZEBS上可以做READ0增加吞吐量 ,没必要做其他
+3、IOSP 每秒读写速度  3 IOPS/GB  封顶10000IOPS  与160MBps
+4、两个盘并发，提高IOPS效率  
+5、s3 数据归档到冷">
+<meta property="og:image" content="http://yoursite.com/images/aws.jpg">
+<meta property="og:updated_time" content="2015-10-02T07:23:15.669Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="邢海峰的博客">
-<meta name="twitter:description" content="随想录（1）-互联网狗文化
+<meta name="twitter:description" content="AWS实战及AWS的坑
 
-在联想工作谈的是狼文化，后来觉得自己太狗了，所以思考狗文化
-狼最喜欢刨坑 ，给自己挖坑，看看联想这只狼，饿的逼得喝的 ，眼睛都绿了。不是黑联想 ，真心希望作为民族企业、传统企业的领袖联想在互联网+的浪潮中能转型成功，越办越好。
-狗饿了能吃屎，等屈能伸，这种心理适合创业公司，更适合传统企业转型互联网
-舌头长：会舔 ，上舔领导、下舔客户，关系都维持的明明白白的
-够忠诚：狗">
+
+1、多块网卡绑定后 ，可以在操作系统路由表里设定流量走那块网卡
+2、对象存储适合一次性多次读  ，EBS需要和网卡共享带宽的，可以做快照，默认存在S3上，可以跨AZEBS上可以做READ0增加吞吐量 ,没必要做其他
+3、IOSP 每秒读写速度  3 IOPS/GB  封顶10000IOPS  与160MBps
+4、两个盘并发，提高IOPS效率  
+5、s3 数据归档到冷">
 
     
     <link rel="alternative" href="/atom.xml" title="邢海峰的博客" type="application/atom+xml">
@@ -98,14 +102,14 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2015/10/02/随想录（2）-互联网狗文化/" title="" itemprop="url"></a>
+      <a href="/2015/10/02/AWS实战及AWS的坑/" title="" itemprop="url"></a>
   </h1>
   <p class="article-author">By
        
 		<a href="/about" title="邢海峰" target="_blank" itemprop="author">邢海峰</a>
 		
   <p class="article-time">
-    <time datetime="2015-10-02T05:48:08.477Z" itemprop="datePublished"> 发表于 2015-10-02</time>
+    <time datetime="2015-10-02T07:23:15.669Z" itemprop="datePublished"> 发表于 2015-10-02</time>
     
   </p>
 </header>
@@ -119,16 +123,41 @@
 		</div>
 		
 		<ul>
-<li>随想录（1）-互联网狗文化</li>
+<li>AWS实战及AWS的坑</li>
 </ul>
-<p>在联想工作谈的是狼文化，后来觉得自己太狗了，所以思考狗文化</p>
-<p>狼最喜欢刨坑 ，给自己挖坑，看看联想这只狼，饿的逼得喝的 ，眼睛都绿了。不是黑联想 ，真心希望作为民族企业、传统<br>企业的领袖联想在互联网+的浪潮中能转型成功，越办越好。</p>
-<p>狗饿了能吃屎，等屈能伸，这种心理适合创业公司，更适合传统企业转型互联网</p>
-<p>舌头长：会舔 ，上舔领导、下舔客户，关系都维持的明明白白的</p>
-<p>够忠诚：狗对主人忠诚，哪个公司都希望员工忠心</p>
-<p>攻击型：够能咬人呢　，汪汪汪 , 维护公司利益，有事真上</p>
-<p>奖励型: 狗是需要激励的，要隔三差五的扔根骨头</p>
-<p>在工作中要有疯狗精神，技术突破，维护客户，不知疲倦，对骨头充满渴望 。保持激情、保持愤怒。</p>
+<img src="/images/aws.jpg" width="500" height="200">
+<p>1、多块网卡绑定后 ，可以在操作系统路由表里设定流量走那块网卡</p>
+<p>2、对象存储适合一次性多次读  ，EBS需要和网卡共享带宽的，可以做快照，默认存在S3上，可以跨AZ<br>EBS上可以做READ0增加吞吐量 ,没必要做其他</p>
+<p>3、IOSP 每秒读写速度  3 IOPS/GB  封顶10000IOPS  与160MBps</p>
+<p>4、两个盘并发，提高IOPS效率  </p>
+<p>5、s3 数据归档到冷数据glacier ,glacier价格低 适合存储冷数据，可以临时调出到S3 选择调出多少天</p>
+<p>6、每个用户最多建立100个bucket </p>
+<p>7、AWS Key Management Service 管理密钥 数据安全  </p>
+<p>8、AZ光纤直连 高可用 延时只有2毫秒 ，AZ里是多个DC数据中心组合，AZ之间延迟2毫秒之内，同一个AZ里延时0.5毫秒</p>
+<p>9、EBS是块存储 ，S3、Glacier是对象存储 ,可用级别达到11个9 </p>
+<p>中国北京、宁夏两个Regin 宁夏规程超过美国</p>
+<p>1、vcup叫超线程  8核cpu相当于16vcup</p>
+<p>2、Elastic Load balancer负载均衡，支持4层负载、如果实现7层，前面可用配置Nginx,实现松耦合,支持http、https、tcp、ssl协议，端口可以任意指定，可用自动伸缩、自动扩展</p>
+<p>3、收集日志的时候，需要稍做调整用命令行方式</p>
+<p>4、跨SESSION,解决方案sticky sessions 慎用啊  将session保存在持久层上。</p>
+<p>5、ELB不能跨Regin负载均衡，如果需要可以采用Route 53,百分之一百的安全，极度高可用，没有进入中国 weighted round robin可以配置权重配置某个区域权重高<br>Geolocation routing 基于地理位置的分配中国用户访问中国、美国用户访问美国，</p>
+<p>6、可以用EC2翻墙 ，在-D  后面加端口号 ，在浏览器配置8888即可 ，53里可以注册域名哦，A记录 IP和域名对应 cName是二期域名别名的意思</p>
+<p>7、nslookup查看IP地址  </p>
+<p>8、NOSQL横向扩展能力 分布式部署、速度快，ERP系统用关系型数据库就OK 根据应用场景选择，看用户需求。</p>
+<p>9、DynamoDB 毫秒级别、非关系型 托管在AWS上,收集用户行为等应用 ，对节点（分区）架构 ，适合简单查询、Session data、零维护Zero Administration ,key最大400K<br>Range key 和hash key ,hash key 只能用equal查询，NOsql不符合sql范式，可以新建索引indexes ,吞吐量也可以调整</p>
+<p>10、Aurora 极光数据 比mysql快3-5倍 使用和mysql没有区别，目标是替换mysql</p>
+<p>11、RDS支持多AZ部署，RDS可以建立只读副本从而实现读写分离</p>
+<p>12、ElastiCache 支持Memcached、Redis只能在单AZ部署 ，支持集群,必须在内网使用哦，同一个网段的1.8毫秒能插入一条记录，速度非常快 ，基本相当于网络开销了。Redis是主从、Memcache是分片的</p>
+<p>13、Tsunami UDP 传输工具 网上可下载，2G从美国到中国70秒时间传回来。UDP速度快，一般来讲可以的，可能不可靠。</p>
+<p>14、CloudFront服务，CDN内容加速 ，部署在边缘节点上比如香港 ，能加速动态和静态内容</p>
+<p>15、BitTorrent 点对点，可以相互优化速度 。 ？torrent</p>
+<p>16、CloudWatch  资源监控带界面的<br>责任公担模型 划清用户和AWS服务的边界，哪些是用户该做的，哪些是AWS提供的。</p>
+<p>17、CloudTrail 服务跟踪，查看每个账号行为动作、安全审计，logging状态为ON即打开。</p>
+<p>18、Auto Scaling Group 自动伸缩组 波峰波谷理论，充分证明云的优势，服务器按波峰配置，浪费资源。<br>CloudWatch来监控根据流量自动加减服务器，小实例变大实例、少实例变多实例，在Launch Configurations配置<br>加一个关机脚本 ，迁移数据；非常好的服务，并且免费建议使用，如果只有一台机器，会自动重启。</p>
+<p>19、ELB+CloudWatch+Atuo Scaling 三剑客配合使用效果非常好</p>
+<p>20、CloudFormation 能从美国将部署模板（云阵型）迁移到任何区域，不需要重新点鼠标创建<br>利用CloudFormer工具</p>
+<p>21、Elastic Beanstalk 应用容器，只需上传程序，自动创建EC2<br>这是一个paas服务</p>
+<p>22、opsWorks运维自动化工具</p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -141,7 +170,7 @@
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="http://yoursite.com/2015/10/02/随想录（2）-互联网狗文化/" data-title="邢海峰的博客" data-tsina="null" class="share clearfix">
+	  <div data-url="http://yoursite.com/2015/10/02/AWS实战及AWS的坑/" data-title="邢海峰的博客" data-tsina="null" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -155,7 +184,7 @@
 <nav class="article-nav clearfix">
  
  <div class="prev" >
- <a href="/2015/10/02/智能路由器新玩法/" title="">
+ <a href="/2015/10/02/AWS ELB负载均衡实战/" title="">
   <strong>上一篇：</strong><br/>
   <span>
   (no title)</span>
@@ -164,7 +193,7 @@
 
 
 <div class="next">
-<a href="/2015/10/02/随想录（1）-你们只需要记住，我叫叶良辰 - 副本/"  title="">
+<a href="/2015/10/02/AWS VPC网络划分/"  title="">
  <strong>下一篇：</strong><br/> 
  <span>(no title)
 </span>
@@ -175,7 +204,7 @@
 
 	
 <section id="comments" class="comment">
-	<div class="ds-thread" data-thread-key="2015/10/02/随想录（2）-互联网狗文化/" data-title="" data-url="http://yoursite.com/2015/10/02/随想录（2）-互联网狗文化/"></div>
+	<div class="ds-thread" data-thread-key="2015/10/02/AWS实战及AWS的坑/" data-title="" data-url="http://yoursite.com/2015/10/02/AWS实战及AWS的坑/"></div>
 </section>
 
 
