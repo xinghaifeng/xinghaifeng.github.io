@@ -4,36 +4,33 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>邢海峰的博客</title>
+    <title>EBS、RDS、S3、Glacier存储介绍 | 邢海峰的博客</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="邢海峰">
     
 
     
-    <meta name="description" content="title: EBS、RDS、S3、Glacier存储介绍
-AWS 存储服务各具特色，我们分别介绍EBS、S3、Glacier功能及使用场景。
+    <meta name="description" content="AWS 存储服务各具特色，我们分别介绍EBS、S3、Glacier功能及使用场景。
 
 1、EBSSSD磁盘,适合存储持久化数据，可用性高达11个9使用场景：作为磁盘使用，IOPS非常高 ，最快2毫秒以内
-2、S3Amazon Simple Storage Service是一项面向Internet 的存储服务，最多新建100个存储桶、可以配">
+2、S3Amazon Simple Storage Service是一项面向Internet 的存储服务，最多新建100个存储桶、可以配置访问权限等使用场景：存放静态资源、如果网站是html存静态">
 <meta property="og:type" content="article">
-<meta property="og:title" content="邢海峰的博客">
+<meta property="og:title" content="EBS、RDS、S3、Glacier存储介绍">
 <meta property="og:url" content="http://yoursite.com/2015/10/02/EBS、RDS、S3、Glacier存储介绍/index.html">
 <meta property="og:site_name" content="邢海峰的博客">
-<meta property="og:description" content="title: EBS、RDS、S3、Glacier存储介绍
-AWS 存储服务各具特色，我们分别介绍EBS、S3、Glacier功能及使用场景。
+<meta property="og:description" content="AWS 存储服务各具特色，我们分别介绍EBS、S3、Glacier功能及使用场景。
 
 1、EBSSSD磁盘,适合存储持久化数据，可用性高达11个9使用场景：作为磁盘使用，IOPS非常高 ，最快2毫秒以内
-2、S3Amazon Simple Storage Service是一项面向Internet 的存储服务，最多新建100个存储桶、可以配">
+2、S3Amazon Simple Storage Service是一项面向Internet 的存储服务，最多新建100个存储桶、可以配置访问权限等使用场景：存放静态资源、如果网站是html存静态">
 <meta property="og:image" content="http://yoursite.com/images/aws.jpg">
-<meta property="og:updated_time" content="2015-10-02T15:06:18.693Z">
+<meta property="og:updated_time" content="2015-10-02T15:24:19.663Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="邢海峰的博客">
-<meta name="twitter:description" content="title: EBS、RDS、S3、Glacier存储介绍
-AWS 存储服务各具特色，我们分别介绍EBS、S3、Glacier功能及使用场景。
+<meta name="twitter:title" content="EBS、RDS、S3、Glacier存储介绍">
+<meta name="twitter:description" content="AWS 存储服务各具特色，我们分别介绍EBS、S3、Glacier功能及使用场景。
 
 1、EBSSSD磁盘,适合存储持久化数据，可用性高达11个9使用场景：作为磁盘使用，IOPS非常高 ，最快2毫秒以内
-2、S3Amazon Simple Storage Service是一项面向Internet 的存储服务，最多新建100个存储桶、可以配">
+2、S3Amazon Simple Storage Service是一项面向Internet 的存储服务，最多新建100个存储桶、可以配置访问权限等使用场景：存放静态资源、如果网站是html存静态">
 
     
     <link rel="alternative" href="/atom.xml" title="邢海峰的博客" type="application/atom+xml">
@@ -92,14 +89,14 @@ AWS 存储服务各具特色，我们分别介绍EBS、S3、Glacier功能及使�
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2015/10/02/EBS、RDS、S3、Glacier存储介绍/" title="" itemprop="url"></a>
+      <a href="/2015/10/02/EBS、RDS、S3、Glacier存储介绍/" title="EBS、RDS、S3、Glacier存储介绍" itemprop="url">EBS、RDS、S3、Glacier存储介绍</a>
   </h1>
   <p class="article-author">By
        
 		<a href="/about" title="邢海峰" target="_blank" itemprop="author">邢海峰</a>
 		
   <p class="article-time">
-    <time datetime="2015-10-02T15:06:18.693Z" itemprop="datePublished"> 发表于 2015-10-02</time>
+    <time datetime="2015-10-02T15:24:19.663Z" itemprop="datePublished"> 发表于 2015-10-02</time>
     
   </p>
 </header>
@@ -112,8 +109,7 @@ AWS 存储服务各具特色，我们分别介绍EBS、S3、Glacier功能及使�
 		
 		</div>
 		
-		<p>title: EBS、RDS、S3、Glacier存储介绍</p>
-<p>AWS 存储服务各具特色，我们分别介绍EBS、S3、Glacier功能及使用场景。</p>
+		<p>AWS 存储服务各具特色，我们分别介绍EBS、S3、Glacier功能及使用场景。</p>
 <img src="/images/aws.jpg" width="500" height="200">
 <p>1、EBS<br>SSD磁盘,适合存储持久化数据，可用性高达11个9<br>使用场景：作为磁盘使用，IOPS非常高 ，最快2毫秒以内</p>
 <p>2、S3<br>Amazon Simple Storage Service是一项面向Internet 的存储服务，最多新建100个存储桶、可以配置访问权限等<br>使用场景：存放静态资源、如果网站是html存静态，直接放到S3即可访问</p>
@@ -167,18 +163,18 @@ AWS 存储服务各具特色，我们分别介绍EBS、S3、Glacier功能及使�
 <nav class="article-nav clearfix">
  
  <div class="prev" >
- <a href="/2015/10/02/hello-world/" title="">
+ <a href="/2015/10/02/hello-world/" title="日记">
   <strong>上一篇：</strong><br/>
   <span>
-  (no title)</span>
+  日记</span>
 </a>
 </div>
 
 
 <div class="next">
-<a href="/2015/10/02/AWS移动端架构方案/"  title="">
+<a href="/2015/10/02/AWS移动端架构方案/"  title="AWS移动端架构方案">
  <strong>下一篇：</strong><br/> 
- <span>(no title)
+ <span>AWS移动端架构方案
 </span>
 </a>
 </div>
@@ -187,7 +183,7 @@ AWS 存储服务各具特色，我们分别介绍EBS、S3、Glacier功能及使�
 
 	
 <section id="comments" class="comment">
-	<div class="ds-thread" data-thread-key="2015/10/02/EBS、RDS、S3、Glacier存储介绍/" data-title="" data-url="http://yoursite.com/2015/10/02/EBS、RDS、S3、Glacier存储介绍/"></div>
+	<div class="ds-thread" data-thread-key="2015/10/02/EBS、RDS、S3、Glacier存储介绍/" data-title="EBS、RDS、S3、Glacier存储介绍" data-url="http://yoursite.com/2015/10/02/EBS、RDS、S3、Glacier存储介绍/"></div>
 </section>
 
 

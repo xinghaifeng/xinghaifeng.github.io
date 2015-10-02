@@ -4,30 +4,27 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>邢海峰的博客</title>
+    <title>AWS IAM用户角色权限 | 邢海峰的博客</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="邢海峰">
     
 
     
-    <meta name="description" content="title: AWS IAM用户角色权限
-IAM全称： Identity and Access Management  ，IAM能够集中管理用户、安全证书（例如访问密钥），以及控制用户可访问哪些AWS 资源的权限。可以按角色、权限、组来划分用户、可以将EC2绑定到角色中。公司可以通过IAM划分各个部门的权限，方便统一管理及账单整合费用计算。
-账号登录方式：用户名+密码+MFA 设备/手机令牌 ，这">
+    <meta name="description" content="IAM全称： Identity and Access Management  ，IAM能够集中管理用户、安全证书（例如访问密钥），以及控制用户可访问哪些AWS 资源的权限。可以按角色、权限、组来划分用户、可以将EC2绑定到角色中。公司可以通过IAM划分各个部门的权限，方便统一管理及账单整合费用计算。
+账号登录方式：用户名+密码+MFA 设备/手机令牌 ，这样即使用户名密码暴露，账号也不会被恶意登陆">
 <meta property="og:type" content="article">
-<meta property="og:title" content="邢海峰的博客">
+<meta property="og:title" content="AWS IAM用户角色权限">
 <meta property="og:url" content="http://yoursite.com/2015/10/02/AWS IAM用户角色权限/index.html">
 <meta property="og:site_name" content="邢海峰的博客">
-<meta property="og:description" content="title: AWS IAM用户角色权限
-IAM全称： Identity and Access Management  ，IAM能够集中管理用户、安全证书（例如访问密钥），以及控制用户可访问哪些AWS 资源的权限。可以按角色、权限、组来划分用户、可以将EC2绑定到角色中。公司可以通过IAM划分各个部门的权限，方便统一管理及账单整合费用计算。
-账号登录方式：用户名+密码+MFA 设备/手机令牌 ，这">
+<meta property="og:description" content="IAM全称： Identity and Access Management  ，IAM能够集中管理用户、安全证书（例如访问密钥），以及控制用户可访问哪些AWS 资源的权限。可以按角色、权限、组来划分用户、可以将EC2绑定到角色中。公司可以通过IAM划分各个部门的权限，方便统一管理及账单整合费用计算。
+账号登录方式：用户名+密码+MFA 设备/手机令牌 ，这样即使用户名密码暴露，账号也不会被恶意登陆">
 <meta property="og:image" content="http://yoursite.com/images/AWS_IAM001.png">
-<meta property="og:updated_time" content="2015-10-02T15:05:37.285Z">
+<meta property="og:updated_time" content="2015-10-02T15:23:35.876Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="邢海峰的博客">
-<meta name="twitter:description" content="title: AWS IAM用户角色权限
-IAM全称： Identity and Access Management  ，IAM能够集中管理用户、安全证书（例如访问密钥），以及控制用户可访问哪些AWS 资源的权限。可以按角色、权限、组来划分用户、可以将EC2绑定到角色中。公司可以通过IAM划分各个部门的权限，方便统一管理及账单整合费用计算。
-账号登录方式：用户名+密码+MFA 设备/手机令牌 ，这">
+<meta name="twitter:title" content="AWS IAM用户角色权限">
+<meta name="twitter:description" content="IAM全称： Identity and Access Management  ，IAM能够集中管理用户、安全证书（例如访问密钥），以及控制用户可访问哪些AWS 资源的权限。可以按角色、权限、组来划分用户、可以将EC2绑定到角色中。公司可以通过IAM划分各个部门的权限，方便统一管理及账单整合费用计算。
+账号登录方式：用户名+密码+MFA 设备/手机令牌 ，这样即使用户名密码暴露，账号也不会被恶意登陆">
 
     
     <link rel="alternative" href="/atom.xml" title="邢海峰的博客" type="application/atom+xml">
@@ -86,14 +83,14 @@ IAM全称： Identity and Access Management  ，IAM能够集中管理用户、�
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2015/10/02/AWS IAM用户角色权限/" title="" itemprop="url"></a>
+      <a href="/2015/10/02/AWS IAM用户角色权限/" title="AWS IAM用户角色权限" itemprop="url">AWS IAM用户角色权限</a>
   </h1>
   <p class="article-author">By
        
 		<a href="/about" title="邢海峰" target="_blank" itemprop="author">邢海峰</a>
 		
   <p class="article-time">
-    <time datetime="2015-10-02T15:05:37.285Z" itemprop="datePublished"> 发表于 2015-10-02</time>
+    <time datetime="2015-10-02T15:23:35.876Z" itemprop="datePublished"> 发表于 2015-10-02</time>
     
   </p>
 </header>
@@ -106,8 +103,7 @@ IAM全称： Identity and Access Management  ，IAM能够集中管理用户、�
 		
 		</div>
 		
-		<p>title: AWS IAM用户角色权限</p>
-<p>IAM全称： Identity and Access Management  ，IAM能够集中管理用户、安全证书（例如访问密钥），以及控制用户可访问哪些AWS 资源的权限。可以按角色、权限、组来划分用户、可以将EC2绑定到角色中。公司可以通过IAM划分各个部门的权限，方便统一管理及账单整合费用计算。</p>
+		<p>IAM全称： Identity and Access Management  ，IAM能够集中管理用户、安全证书（例如访问密钥），以及控制用户可访问哪些AWS 资源的权限。可以按角色、权限、组来划分用户、可以将EC2绑定到角色中。公司可以通过IAM划分各个部门的权限，方便统一管理及账单整合费用计算。</p>
 <p>账号登录方式：用户名+密码+MFA 设备/手机令牌 ，这样即使用户名密码暴露，账号也不会被恶意登陆，每个账号单独认证，互不影响 ，如果用户需要以API编程方式访问AWS，那么必须为他们创建访问密钥。</p>
 <p>##AWS IAM</p>
 <img src="/images/AWS_IAM001.png" width="900" height="700">
@@ -166,18 +162,18 @@ IAM全称： Identity and Access Management  ，IAM能够集中管理用户、�
 <nav class="article-nav clearfix">
  
  <div class="prev" >
- <a href="/2015/10/02/AWS VPC网络划分/" title="">
+ <a href="/2015/10/02/AWS VPC网络划分/" title="AWS VPC网络划分">
   <strong>上一篇：</strong><br/>
   <span>
-  (no title)</span>
+  AWS VPC网络划分</span>
 </a>
 </div>
 
 
 <div class="next">
-<a href="/2015/10/02/AWS ELB负载均衡实战/"  title="">
+<a href="/2015/10/02/AWS ELB负载均衡实战/"  title="AWS ELB负载均衡实战">
  <strong>下一篇：</strong><br/> 
- <span>(no title)
+ <span>AWS ELB负载均衡实战
 </span>
 </a>
 </div>
@@ -186,7 +182,7 @@ IAM全称： Identity and Access Management  ，IAM能够集中管理用户、�
 
 	
 <section id="comments" class="comment">
-	<div class="ds-thread" data-thread-key="2015/10/02/AWS IAM用户角色权限/" data-title="" data-url="http://yoursite.com/2015/10/02/AWS IAM用户角色权限/"></div>
+	<div class="ds-thread" data-thread-key="2015/10/02/AWS IAM用户角色权限/" data-title="AWS IAM用户角色权限" data-url="http://yoursite.com/2015/10/02/AWS IAM用户角色权限/"></div>
 </section>
 
 
