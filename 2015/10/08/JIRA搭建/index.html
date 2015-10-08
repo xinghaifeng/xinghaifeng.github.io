@@ -4,39 +4,40 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>《一个人的电商：树莓派+NodeJS+MongoDB搭建微信公众平台》 | 邢海峰的博客</title>
+    <title>智能路由器新玩法 | 邢海峰的博客</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="邢海峰">
     
 
     
-    <meta name="description" content="最近读了许晓辉的书 《一个人的电商：运营策略与实操手记》深受启发，技术、运营、市场、营销、运维缺一不可，我崇拜个人英雄主义、单打独斗。因此再扩展思维写一篇《一个人的电商：树莓派+NodeJS+MongoDB搭建微信公众平台》
-
-前言用树莓派搭建Linux服务器，通过ngrok将内网映射到公网上面，这样就可以在公网访问我们用树莓派搭建的网络服务NodeJS+MongoDB搭建微信公众平台,从产品设计">
+    <meta name="description" content="智能路由器：极路由、小米路由、360安全路由器通过智能路由器安装插件，可以控制、和谐一些网站，尤其购物网站 哈哈 ~  屏蔽视频中的广告 、设置动态代理等等 
+各自优点：极路由支持路由器上班打卡解决方案，插件相对比较多、小米提供了开发者SDK 、360主打安全牌
+常用的翻墙方法：
+ GoAgent代理 设置繁琐二师兄http://www.2sxvpn.wang/   花钱就能解决问题 推荐无界浏览">
 <meta property="og:type" content="article">
-<meta property="og:title" content="《一个人的电商：树莓派+NodeJS+MongoDB搭建微信公众平台》">
-<meta property="og:url" content="http://yoursite.com/2015/10/08/《一个人的电商：树莓派+NodeJS+MongoDB搭建微信公众平台》/index.html">
+<meta property="og:title" content="智能路由器新玩法">
+<meta property="og:url" content="http://yoursite.com/2015/10/08/JIRA搭建/index.html">
 <meta property="og:site_name" content="邢海峰的博客">
-<meta property="og:description" content="最近读了许晓辉的书 《一个人的电商：运营策略与实操手记》深受启发，技术、运营、市场、营销、运维缺一不可，我崇拜个人英雄主义、单打独斗。因此再扩展思维写一篇《一个人的电商：树莓派+NodeJS+MongoDB搭建微信公众平台》
-
-前言用树莓派搭建Linux服务器，通过ngrok将内网映射到公网上面，这样就可以在公网访问我们用树莓派搭建的网络服务NodeJS+MongoDB搭建微信公众平台,从产品设计">
-<meta property="og:image" content="http://yoursite.com/images/weixin01.png">
-<meta property="og:image" content="http://yoursite.com/images/weixin02.png">
-<meta property="og:image" content="http://yoursite.com/images/weixin03.png">
-<meta property="og:image" content="http://yoursite.com/images/weixin04.png">
-<meta property="og:image" content="http://yoursite.com/images/weixin05.png">
-<meta property="og:image" content="http://yoursite.com/images/weixin06.png">
-<meta property="og:image" content="http://yoursite.com/images/weixin07.png">
-<meta property="og:image" content="http://yoursite.com/images/weixin08.png">
-<meta property="og:image" content="http://yoursite.com/images/weixin09.png">
-<meta property="og:image" content="http://yoursite.com/images/weixin10.png">
-<meta property="og:updated_time" content="2015-10-08T03:21:58.688Z">
+<meta property="og:description" content="智能路由器：极路由、小米路由、360安全路由器通过智能路由器安装插件，可以控制、和谐一些网站，尤其购物网站 哈哈 ~  屏蔽视频中的广告 、设置动态代理等等 
+各自优点：极路由支持路由器上班打卡解决方案，插件相对比较多、小米提供了开发者SDK 、360主打安全牌
+常用的翻墙方法：
+ GoAgent代理 设置繁琐二师兄http://www.2sxvpn.wang/   花钱就能解决问题 推荐无界浏览">
+<meta property="og:image" content="http://yoursite.com/images/ji01.png">
+<meta property="og:image" content="http://yoursite.com/images/ji03.png">
+<meta property="og:image" content="http://yoursite.com/images/ji04.png">
+<meta property="og:image" content="http://yoursite.com/images/ji05.png">
+<meta property="og:image" content="http://yoursite.com/images/ji06.png">
+<meta property="og:image" content="http://yoursite.com/images/ji07.png">
+<meta property="og:image" content="http://yoursite.com/images/ji08.png">
+<meta property="og:image" content="http://yoursite.com/images/ji09.png">
+<meta property="og:updated_time" content="2015-10-02T15:25:32.534Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="《一个人的电商：树莓派+NodeJS+MongoDB搭建微信公众平台》">
-<meta name="twitter:description" content="最近读了许晓辉的书 《一个人的电商：运营策略与实操手记》深受启发，技术、运营、市场、营销、运维缺一不可，我崇拜个人英雄主义、单打独斗。因此再扩展思维写一篇《一个人的电商：树莓派+NodeJS+MongoDB搭建微信公众平台》
-
-前言用树莓派搭建Linux服务器，通过ngrok将内网映射到公网上面，这样就可以在公网访问我们用树莓派搭建的网络服务NodeJS+MongoDB搭建微信公众平台,从产品设计">
+<meta name="twitter:title" content="智能路由器新玩法">
+<meta name="twitter:description" content="智能路由器：极路由、小米路由、360安全路由器通过智能路由器安装插件，可以控制、和谐一些网站，尤其购物网站 哈哈 ~  屏蔽视频中的广告 、设置动态代理等等 
+各自优点：极路由支持路由器上班打卡解决方案，插件相对比较多、小米提供了开发者SDK 、360主打安全牌
+常用的翻墙方法：
+ GoAgent代理 设置繁琐二师兄http://www.2sxvpn.wang/   花钱就能解决问题 推荐无界浏览">
 
     
     <link rel="alternative" href="/atom.xml" title="邢海峰的博客" type="application/atom+xml">
@@ -95,14 +96,14 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2015/10/08/《一个人的电商：树莓派+NodeJS+MongoDB搭建微信公众平台》/" title="《一个人的电商：树莓派+NodeJS+MongoDB搭建微信公众平台》" itemprop="url">《一个人的电商：树莓派+NodeJS+MongoDB搭建微信公众平台》</a>
+      <a href="/2015/10/08/JIRA搭建/" title="智能路由器新玩法" itemprop="url">智能路由器新玩法</a>
   </h1>
   <p class="article-author">By
        
 		<a href="/about" title="邢海峰" target="_blank" itemprop="author">邢海峰</a>
 		
   <p class="article-time">
-    <time datetime="2015-10-08T03:21:58.688Z" itemprop="datePublished"> 发表于 2015-10-08</time>
+    <time datetime="2015-10-08T04:18:17.779Z" itemprop="datePublished"> 发表于 2015-10-08</time>
     
   </p>
 </header>
@@ -111,46 +112,27 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#前言"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#步骤："><span class="toc-number">1.1.</span> <span class="toc-text">步骤：</span></a></li></ol></li></ol>
+			
 		
 		</div>
 		
-		<blockquote>
-<p>最近读了许晓辉的书 《一个人的电商：运营策略与实操手记》深受启发，技术、运营、市场、营销、运维缺一不可，我崇拜个人英雄主义、单打独斗。因此再扩展思维写一篇《一个人的电商：树莓派+NodeJS+MongoDB搭建微信公众平台》</p>
-</blockquote>
-<h1 id="前言">前言</h1><p>用树莓派搭建Linux服务器，通过ngrok将内网映射到公网上面，这样就可以在公网访问我们用树莓派搭建的网络服务<br>NodeJS+MongoDB搭建微信公众平台,从产品设计、需求分析、开发、测试一个人全部搞定，省去沟通成本</p>
-<h2 id="步骤：">步骤：</h2><p>   1、注册微信开放平台<br>       mp.weixin.qq.com<br>   <img src="/images/weixin01.png" width="500" height="500"></p>
-   <img src="/images/weixin02.png" width="500" height="500">
-<p>   2、获取TOKEN<br>       在公众平台个人首页的右下角点击“开发者中心” 如图：<br>       <img src="/images/weixin03.png" width="500" height="500"></p>
-<pre><code>看一下技术文档，如何获取TOKEN一会NodeJS搭建完成后即可实际操作
-
-<span class="comment"><img src="/images/weixin04.png" width="500" height="500"></span>
-</code></pre><p>   3、树莓派安装系统镜像</p>
-<pre><code>安装文档及镜像，下载链接：<span class="string">http:</span><span class="comment">//pan.baidu.com/s/17k6a 密码：gvox</span>
-</code></pre><p>   4、树莓派安装MongoDB<br>       下载地址：<a href="https://www.mongodb.org/downloads" target="_blank" rel="external">https://www.mongodb.org/downloads</a></p>
-<p>   5、树莓派安装NodeJS、NPM、GIT、截屏方法<br>      NodeJS下载地址： <a href="https://nodejs.org/en/download/" target="_blank" rel="external">https://nodejs.org/en/download/</a>  注意一定要下载ARMv7版本，如图：</p>
-<pre><code><span class="comment"><img src="/images/weixin05.png" width="500" height="500"></span>
-
-
-npm安装参考：http://npm.taobao.org/
-
-GIT安装:sudo apt-get install git
-
-树莓派截屏：
- sudo apt-get install scrot      
- sudo scrot -s
-</code></pre><p>   6、ngrok安装</p>
-<pre><code><span class="comment"><img src="/images/weixin06.png" width="500" height="500"></span>
-
-
-<span class="comment"><img src="/images/weixin07.png" width="660" height="820"></span>
-
-
-<span class="comment"><img src="/images/weixin08.png" width="600" height="500"></span>
-</code></pre><p>   7、用NodeJS搭建微信菜单栏<br>      <img src="/images/weixin09.png" width="800" height="700"></p>
-<pre><code><span class="comment"><img src="/images/weixin10.png" width="800" height="700"></span>
-</code></pre><p>   8、用NodeJS开发业务功能<br>        获取TOKEN、自定义菜单栏、新闻发布、产品发布、产品追踪</p>
-<p>   9、微信公众平台功能<br>       优粮科技为佳沃开发公众号  ，产品生产全流程跟踪、产品展示、营销活动等。</p>
+		<p>智能路由器：极路由、小米路由、360安全路由器<br>通过智能路由器安装插件，可以控制、和谐一些网站，尤其购物网站 哈哈 ~  屏蔽视频中的广告 、设置动态代理等等 </p>
+<p>各自优点：极路由支持路由器上班打卡解决方案，插件相对比较多、小米提供了开发者SDK 、360主打安全牌</p>
+<p>常用的翻墙方法：</p>
+<p> GoAgent代理 设置繁琐<br>二师兄<a href="http://www.2sxvpn.wang/" target="_blank" rel="external">http://www.2sxvpn.wang/</a>   花钱就能解决问题 推荐<br>无界浏览器，这个反动的 ，不能用<br>路由器翻墙，通过路由器SSH插件翻墙，缺点是经常被和谐 推荐<br>aws翻墙，注册一个AWS的global账号，用SSH连接后 ，将浏览器代理设置成远程IP 及端口即可 推荐</p>
+<p>首先介绍极路由玩法：</p>
+<p>1、登陆<a href="http://www.hiwifi.com/" target="_blank" rel="external">http://www.hiwifi.com/</a>  进入路由器后台<br><img src="/images/ji01.png" width="500" height="500"></p>
+<p>2、滑动页面最下方点击高级设置</p>
+<img src="/images/ji03.png" width="500" height="500">
+<p>3、申请开发者模式 </p>
+<img src="/images/ji04.png" width="500" height="500">
+<img src="/images/ji05.png" width="500" height="500">
+<img src="/images/ji06.png" width="500" height="500">
+<p>4、查看可以按照的插件</p>
+<img src="/images/ji07.png" width="500" height="500">
+<img src="/images/ji08.png" width="500" height="500">
+<p>5、这个SSH翻墙被和谐了  找不到啦 </p>
+<img src="/images/ji09.png" width="500" height="500">
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -199,7 +181,7 @@ GIT安装:sudo apt-get install git
 <nav class="article-nav clearfix">
  
  <div class="prev" >
- <a href="/2015/10/08/JIRA搭建/" title="智能路由器新玩法">
+ <a href="/2015/10/08/Confluence搭建/" title="智能路由器新玩法">
   <strong>上一篇：</strong><br/>
   <span>
   智能路由器新玩法</span>
@@ -208,9 +190,9 @@ GIT安装:sudo apt-get install git
 
 
 <div class="next">
-<a href="/2015/10/03/Hexo搭建个人博客/"  title="Hexo搭建个人博客">
+<a href="/2015/10/08/《一个人的电商：树莓派+NodeJS+MongoDB搭建微信公众平台》/"  title="《一个人的电商：树莓派+NodeJS+MongoDB搭建微信公众平台》">
  <strong>下一篇：</strong><br/> 
- <span>Hexo搭建个人博客
+ <span>《一个人的电商：树莓派+NodeJS+MongoDB搭建微信公众平台》
 </span>
 </a>
 </div>
@@ -219,7 +201,7 @@ GIT安装:sudo apt-get install git
 
 	
 <section id="comments" class="comment">
-	<div class="ds-thread" data-thread-key="2015/10/08/《一个人的电商：树莓派+NodeJS+MongoDB搭建微信公众平台》/" data-title="《一个人的电商：树莓派+NodeJS+MongoDB搭建微信公众平台》" data-url="http://yoursite.com/2015/10/08/《一个人的电商：树莓派+NodeJS+MongoDB搭建微信公众平台》/"></div>
+	<div class="ds-thread" data-thread-key="2015/10/08/JIRA搭建/" data-title="智能路由器新玩法" data-url="http://yoursite.com/2015/10/08/JIRA搭建/"></div>
 </section>
 
 
@@ -229,7 +211,7 @@ GIT安装:sudo apt-get install git
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
  
- <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#前言"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#步骤："><span class="toc-number">1.1.</span> <span class="toc-text">步骤：</span></a></li></ol></li></ol>
+ 
  
   </div>
 
