@@ -4,32 +4,39 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>Hexo搭建个人博客 | 邢海峰的博客</title>
+    <title>《一个人的电商：树莓派+NodeJS+MongoDB搭建微信公众平台》 | 邢海峰的博客</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="邢海峰">
     
 
     
-    <meta name="description" content="2010年以前一直在JavaEye写博客，然后比较懒 ，不怎么写博客了。WordPress还有维护成本，hexo是一个基于Node的博客框架，支持Markdown语法简洁太有牌面了，使用简单而且可以部署在GitHub上 ，没有运维成本 ，唯一不足是GitHub屏蔽百度爬虫，无法被百度爬虫收录。
-步骤
-1、安装Node客户端https://nodejs.org/en/download/
-2、安装Gi">
+    <meta name="description" content="最近读了许晓辉的书 《一个人的电商：运营策略与实操手记》深受启发，技术、运营、市场、营销、运维缺一不可，我崇拜个人英雄主义、单打独斗。因此再扩展思维写一篇《一个人的电商：树莓派+NodeJS+MongoDB搭建微信公众平台》
+#用树莓派搭建Linux服务器，通过ngrok将内网映射到公网上面，这样就可以在公网访问我们用树莓派搭建的网络服务
+#NodeJS+MongoDB搭建微信公众平台,从产品设计">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo搭建个人博客">
-<meta property="og:url" content="http://yoursite.com/2015/10/03/Hexo搭建个人博客/index.html">
+<meta property="og:title" content="《一个人的电商：树莓派+NodeJS+MongoDB搭建微信公众平台》">
+<meta property="og:url" content="http://yoursite.com/2015/10/08/《一个人的电商：树莓派+NodeJS+MongoDB搭建微信公众平台》/index.html">
 <meta property="og:site_name" content="邢海峰的博客">
-<meta property="og:description" content="2010年以前一直在JavaEye写博客，然后比较懒 ，不怎么写博客了。WordPress还有维护成本，hexo是一个基于Node的博客框架，支持Markdown语法简洁太有牌面了，使用简单而且可以部署在GitHub上 ，没有运维成本 ，唯一不足是GitHub屏蔽百度爬虫，无法被百度爬虫收录。
-步骤
-1、安装Node客户端https://nodejs.org/en/download/
-2、安装Gi">
-<meta property="og:updated_time" content="2015-10-02T17:00:04.072Z">
+<meta property="og:description" content="最近读了许晓辉的书 《一个人的电商：运营策略与实操手记》深受启发，技术、运营、市场、营销、运维缺一不可，我崇拜个人英雄主义、单打独斗。因此再扩展思维写一篇《一个人的电商：树莓派+NodeJS+MongoDB搭建微信公众平台》
+#用树莓派搭建Linux服务器，通过ngrok将内网映射到公网上面，这样就可以在公网访问我们用树莓派搭建的网络服务
+#NodeJS+MongoDB搭建微信公众平台,从产品设计">
+<meta property="og:image" content="http://yoursite.com/images/weixin01.png">
+<meta property="og:image" content="http://yoursite.com/images/weixin02.png">
+<meta property="og:image" content="http://yoursite.com/images/weixin03.png">
+<meta property="og:image" content="http://yoursite.com/images/weixin04.png">
+<meta property="og:image" content="http://yoursite.com/images/weixin05.png">
+<meta property="og:image" content="http://yoursite.com/images/weixin06.png">
+<meta property="og:image" content="http://yoursite.com/images/weixin07.png">
+<meta property="og:image" content="http://yoursite.com/images/weixin08.png">
+<meta property="og:image" content="http://yoursite.com/images/weixin09.png">
+<meta property="og:image" content="http://yoursite.com/images/weixin10.png">
+<meta property="og:updated_time" content="2015-10-08T03:02:52.133Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo搭建个人博客">
-<meta name="twitter:description" content="2010年以前一直在JavaEye写博客，然后比较懒 ，不怎么写博客了。WordPress还有维护成本，hexo是一个基于Node的博客框架，支持Markdown语法简洁太有牌面了，使用简单而且可以部署在GitHub上 ，没有运维成本 ，唯一不足是GitHub屏蔽百度爬虫，无法被百度爬虫收录。
-步骤
-1、安装Node客户端https://nodejs.org/en/download/
-2、安装Gi">
+<meta name="twitter:title" content="《一个人的电商：树莓派+NodeJS+MongoDB搭建微信公众平台》">
+<meta name="twitter:description" content="最近读了许晓辉的书 《一个人的电商：运营策略与实操手记》深受启发，技术、运营、市场、营销、运维缺一不可，我崇拜个人英雄主义、单打独斗。因此再扩展思维写一篇《一个人的电商：树莓派+NodeJS+MongoDB搭建微信公众平台》
+#用树莓派搭建Linux服务器，通过ngrok将内网映射到公网上面，这样就可以在公网访问我们用树莓派搭建的网络服务
+#NodeJS+MongoDB搭建微信公众平台,从产品设计">
 
     
     <link rel="alternative" href="/atom.xml" title="邢海峰的博客" type="application/atom+xml">
@@ -88,14 +95,14 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2015/10/03/Hexo搭建个人博客/" title="Hexo搭建个人博客" itemprop="url">Hexo搭建个人博客</a>
+      <a href="/2015/10/08/《一个人的电商：树莓派+NodeJS+MongoDB搭建微信公众平台》/" title="《一个人的电商：树莓派+NodeJS+MongoDB搭建微信公众平台》" itemprop="url">《一个人的电商：树莓派+NodeJS+MongoDB搭建微信公众平台》</a>
   </h1>
   <p class="article-author">By
        
 		<a href="/about" title="邢海峰" target="_blank" itemprop="author">邢海峰</a>
 		
   <p class="article-time">
-    <time datetime="2015-10-02T17:00:04.072Z" itemprop="datePublished"> 发表于 2015-10-03</time>
+    <time datetime="2015-10-08T03:02:52.133Z" itemprop="datePublished"> 发表于 2015-10-08</time>
     
   </p>
 </header>
@@ -108,33 +115,43 @@
 		
 		</div>
 		
-		<p>2010年以前一直在JavaEye写博客，然后比较懒 ，不怎么写博客了。WordPress还有维护成本，hexo是一个基于Node的博客框架，支持Markdown语法简洁太有牌面了，使用简单而且可以部署在GitHub上 ，没有运维成本 ，唯一不足是GitHub屏蔽百度爬虫，无法被百度爬虫收录。</p>
-<p>步骤</p>
-<p>1、安装Node客户端<br><a href="https://nodejs.org/en/download/" target="_blank" rel="external">https://nodejs.org/en/download/</a></p>
-<p>2、安装Git</p>
-<p><a href="http://code.google.com/p/msysgit/" target="_blank" rel="external">http://code.google.com/p/msysgit/</a></p>
-<p>3、安装Hexo </p>
-<p>第一步：npm install hexo-cli -g</p>
-<p>第二步：新建blog目录，然后在Git Bash执行hexo init blog 生成网站所需文件</p>
-<p>第三步：执行hexo g  再执行hexo s、浏览器输入localhost:4000可以看到博客主页搭建完成</p>
-<p>第四步：博客主题下载 git clone <a href="https://github.com/wuchong/jacman.git" target="_blank" rel="external">https://github.com/wuchong/jacman.git</a> themes/jacman</p>
-<p>第五步：修改Hexo目录下的config.yml配置文件中的theme属性，将其设置为jacman。同时请设置stylus属性中的compress值为true</p>
-<p>注意：Hexo有两个config.yml文件，一个在根目录，一个在theme下，此时修改的是在根目录下的</p>
-<p>本地查看调试</p>
-<p>$ hexo g #生成</p>
-<p>$ hexo s #启动本地服务，进行文章预览调试</p>
-<p>4、将独立域名与GitHub Pages的空间绑定</p>
-<p>GitHub Pages的设置</p>
-<p>方法一：在Repository的根目录下面，新建一个名为CNAME的文本文件，里面写入你要绑定的域名，比如xinghf.com。</p>
-<p>方法二：到我的github仓库，点击右下角的「Download ZIP」，下载源文件，解压，找到CNAME文件，用记事本打开，将cnfeat.com修改成你的域名，放进Hexo\source目录下，用hexo命令提交上去。</p>
-<p>  在新网注册域名，域名A记录指向GitHub ,进行域名绑定</p>
-<p>5、集成评论功能+CNZZ</p>
-<p>第一步：静态博客要使用第三方评论系统，hexo默认集成的是Disqus，建议用多说评论<br>第二步：注册CNZZ ，修改模板配置文件，监控网站流量</p>
-<p>6、Hexo命令</p>
-<p>常用命令：</p>
-<p>hexo new “postName” #新建文章<br>hexo new page “pageName” #新建页面<br>hexo generate #生成静态页面至public目录<br>hexo server #开启预览访问端口   默认端口4000<br>hexo deploy #将.deploy目录部署到GitHub</p>
-<p>常用复合命令：</p>
-<p>hexo d -g #生成加部署<br>hexo s -g #预览加部署</p>
+		<p>最近读了许晓辉的书 《一个人的电商：运营策略与实操手记》深受启发，技术、运营、市场、营销、运维缺一不可，我崇拜个人英雄主义、单打独斗。因此<br>再扩展思维写一篇《一个人的电商：树莓派+NodeJS+MongoDB搭建微信公众平台》</p>
+<p>#用树莓派搭建Linux服务器，通过ngrok将内网映射到公网上面，这样就可以在公网访问我们用树莓派搭建的网络服务</p>
+<p>#NodeJS+MongoDB搭建微信公众平台,从产品设计、需求分析、开发、测试一个人全部搞定，省去沟通成本</p>
+<p>#团队禁止洗脑、禁止洗脑</p>
+<p>##步骤：</p>
+<p>   1、注册微信开放平台<br>       mp.weixin.qq.com<br>   <img src="/images/weixin01.png" width="500" height="500"></p>
+   <img src="/images/weixin02.png" width="500" height="500">
+<p>   2、获取TOKEN<br>       在公众平台个人首页的右下角点击“开发者中心” 如图：<br>       <img src="/images/weixin03.png" width="500" height="500"></p>
+<pre><code>看一下技术文档，如何获取TOKEN一会NodeJS搭建完成后即可实际操作
+
+<span class="comment"><img src="/images/weixin04.png" width="500" height="500"></span>
+</code></pre><p>   3、树莓派安装系统镜像</p>
+<pre><code>安装文档及镜像，下载链接：<span class="string">http:</span><span class="comment">//pan.baidu.com/s/17k6a 密码：gvox</span>
+</code></pre><p>   4、树莓派安装MongoDB<br>       下载地址：<a href="https://www.mongodb.org/downloads" target="_blank" rel="external">https://www.mongodb.org/downloads</a></p>
+<p>   5、树莓派安装NodeJS、NPM、GIT、截屏方法<br>      NodeJS下载地址： <a href="https://nodejs.org/en/download/" target="_blank" rel="external">https://nodejs.org/en/download/</a>  注意一定要下载ARMv7版本，如图：</p>
+<pre><code><span class="comment"><img src="/images/weixin05.png" width="500" height="500"></span>
+
+
+npm安装参考：http://npm.taobao.org/
+
+GIT安装:sudo apt-get install git
+
+树莓派截屏：
+ sudo apt-get install scrot      
+ sudo scrot -s
+</code></pre><p>   6、ngrok安装</p>
+<pre><code><span class="comment"><img src="/images/weixin06.png" width="500" height="500"></span>
+
+
+<span class="comment"><img src="/images/weixin07.png" width="660" height="820"></span>
+
+
+<span class="comment"><img src="/images/weixin08.png" width="600" height="500"></span>
+</code></pre><p>   7、用NodeJS搭建微信菜单栏<br>      <img src="/images/weixin09.png" width="800" height="700"></p>
+<pre><code><span class="comment"><img src="/images/weixin10.png" width="800" height="700"></span>
+</code></pre><p>   8、用NodeJS开发业务功能<br>        获取TOKEN、自定义菜单栏、新闻发布、产品发布、产品追踪</p>
+<p>   9、微信公众平台功能<br>       优粮科技为佳沃开发公众号  ，产品生产全流程跟踪、产品展示、营销活动等。</p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -182,19 +199,11 @@
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/2015/10/08/《一个人的电商：树莓派+NodeJS+MongoDB搭建微信公众平台》/" title="《一个人的电商：树莓派+NodeJS+MongoDB搭建微信公众平台》">
-  <strong>上一篇：</strong><br/>
-  <span>
-  《一个人的电商：树莓派+NodeJS+MongoDB搭建微信公众平台》</span>
-</a>
-</div>
-
 
 <div class="next">
-<a href="/2015/10/02/智能路由器新玩法/"  title="智能路由器新玩法">
+<a href="/2015/10/03/Hexo搭建个人博客/"  title="Hexo搭建个人博客">
  <strong>下一篇：</strong><br/> 
- <span>智能路由器新玩法
+ <span>Hexo搭建个人博客
 </span>
 </a>
 </div>
@@ -203,7 +212,7 @@
 
 	
 <section id="comments" class="comment">
-	<div class="ds-thread" data-thread-key="2015/10/03/Hexo搭建个人博客/" data-title="Hexo搭建个人博客" data-url="http://yoursite.com/2015/10/03/Hexo搭建个人博客/"></div>
+	<div class="ds-thread" data-thread-key="2015/10/08/《一个人的电商：树莓派+NodeJS+MongoDB搭建微信公众平台》/" data-title="《一个人的电商：树莓派+NodeJS+MongoDB搭建微信公众平台》" data-url="http://yoursite.com/2015/10/08/《一个人的电商：树莓派+NodeJS+MongoDB搭建微信公众平台》/"></div>
 </section>
 
 
